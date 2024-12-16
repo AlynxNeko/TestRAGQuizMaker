@@ -1,0 +1,3251 @@
+Module 09 - IoT Device Security
+Understanding the loT and Why Organizations Opt for IoT-enabled Environments
+Understanding the loT Architecture and IoT Communication Models
+Understanding the Security Considerations of the loT Framework
+Module Objectives
+The use of Internet of Things (loT) devices in enterprise IT infrastructure has created a vast
+security perimeter. loT devices use both networks and the cloud. However, they are highly
+vulnerable to malware, ransomware, and botnet attacks. Attackers can easily compromise loT
+endpoints. Understanding the security measures will help in securing loT-enabled
+environments.
+
+At the end of this module, you will be able to do the following:
+Understand the loT and why organizations opt for loT-enabled environments
+Describe the loT application areas and loT devices
+Describe the loT architecture and loT communication models
+Understand the security in loT-enabled environments and stack-wise loT security principles
+Understand the security considerations of the loT framework
+Understand loT device management
+Understand the best practices and tools for loT security
+Understand IoT Devices, Application Areas, and Communication Models
+
+The objective of this section is to understand loT devices and areas where loT devices can be
+used in an enterprise.
+What is IoT?
+
+The Internet of Things (loT), also known as the Internet of Everything (loE), refers to computing
+devices that are web-enabled and have the capability of sensing, collecting, and sending data
+using sensors, and the communication hardware and processors that are embedded within the
+device. In the loT, a “thing” refers to a device that is implanted in a natural, human-made, or
+machine-made object and has the functionality of communicating over a network. The loT
+utilizes existing emerging technology for sensing, networking, and robotics, therefore allowing
+the user to achieve deeper analysis, automation, and integration within a system.
+
+With the increase in the networking capabilities of machines and everyday appliances used in
+different sectors like offices, homes, industry, transportation, buildings, and wearable devices, they open up a world of opportunities for the betterment of business and customer
+satisfaction. Some of the key features of the loT are connectivity, sensors, artificial intelligence, small devices, and active engagement.
+Why Organizations are Opting for IoT-enabled Environments
+
+Organizations are opting for loT-enabled environments because loT devices work on a three-
+dimensional plane and provide connectivity for anyone at any time, for anything, and from any
+place. loT devices facilitate connection to various objects; examples include Human-to-Thing
+(H2T) interactions using generic equipment, Thing-to-Thing (T2T) interactions between PCs, and
+Human-to-Human (H2H) interactions without using a PC. The user can connect to loT devices at
+any place regardless of whether they are on the move, indoor (away from PC), outdoor, or at
+the PC. The working mechanism of loT devices on the three-dimensional plane allows the user
+to continuously monitor their business, resolve concerns instantly, increase the efficiency of the
+business, enhance the growth of the organization, increase security, etc.
+
+Some key features of loT are connectivity, sensors, artificial intelligence, small devices, and
+active engagement. loT technology includes four primary systems: loT devices, gateway
+systems, data storage systems based on the cloud, and remote control using mobile apps.
+These systems together enable communication between two endpoints. Discussed below are
+some of the important components of loT technology that play an essential role in the working
+of an loT device.
+
+Sensing technology: Sensors embedded in devices acquire a wide variety of information from the surroundings such as the temperature, gases, location, working of industrial machines, and health data of a patient.
+loT gateways: Gateways are used to bridge the gap between an loT device (internal network) and the end user (external network), thereby allowing them to connect and communicate with each other. The data collected by the sensors in loT devices are collected and sent to the concerned user or cloud through the gateway.
+Cloud server/data storage: The collected data, after traveling through the gateway, arrives at the cloud, where it is stored and subjected to data analysis. The processed data is then transmitted to the user, who takes actions based on the information received.
+Remote control using mobile apps: The end user utilizes remote control devices such as mobile phones, tablets, and laptops installed with a mobile app to monitor, control, retrieve data from, and take actions on loT devices from a remote location.
+
+Example:
+
+1. A smart security system is integrated with a gateway, which in turn helps connect the
+device to the Internet and cloud infrastructure.
+
+2. The data storage in the cloud includes the information of every device connected to the
+network. The information includes the device IDs, the present status of the devices, who
+accessed the devices, and how many times they accessed the devices. It also includes
+information such as for how long the device was accessed the last time.
+
+3. The connection with the cloud server is established through web services.
+
+4. The user on the other side, who has the required app to access a device remotely on
+their mobile phone, interacts with the app and, in turn, with the device. Before
+accessing the device, they are asked to authenticate themselves. If the submitted
+credentials match those saved in the cloud, the user obtains access. Otherwise, access is
+denied, ensuring security. The cloud server identifies the device’s ID and sends a request
+associated with that device using gateways.
+
+5. If the security system recording footage senses any unusual activity, then it sends an
+alert to the cloud through the gateway, which matches the device’s ID and the user
+associated with it. Finally, the end user receives an alert.
+IoT Application Areas and Devices
+
+loT devices have a wide range of applications. They are used in almost every sector of society to assist in various ways to simplify routine work and personal tasks and, thus, improve the
+standard of living. loT technology is included in smart homes and buildings, healthcare devices,
+industrial appliances, transportation, security devices, the retail sector, etc.
+
+Some of the applications of loT devices are as follows:
+Smart devices that are connected to the Internet, providing different services to end- users, include thermostats, lighting systems and security systems, and several other systems that reside in buildings.
+In the healthcare and life science sectors, devices include wearable devices, health monitoring devices such as implanted heart pacemakers, ECG, EKG, surgical equipment, telemedicine, etc.
+The Industrial Internet of Things (IoT) is attracting growth through three approaches: increasing production to boost revenue, using intelligent technology that is entirely changing the way goods are made, and the creation of new hybrid business models.
+Similarly, use of loT technology in the transportation sector follows the concept of vehicle-to-vehicle, vehicle-to-roadside, and vehicle-to-pedestrian communication, thus improving traffic conditions, navigation systems, and parking schemes.
+loT in retail is mainly used in payments, advertisements, and tracking or monitoring products to protect them from theft and loss, thereby increasing revenue.
+In IT and networks, loT devices mainly include various office machines such as printers, fax machines, and copiers as well as PBX monitoring systems; these serve to improve communication between endpoints and provide ease of sending data across long distances.
+
+Source: http://www.beechamresearch.com
+
+Service Sectors
+Application Groups
+Locations
+Devices
+Buildings
+Commercial/Institutional
+Office, Education, Retail, Hospitality, Healthcare, Airports, Stadiums 
+Heating, Ventilation, and Air Conditioning (HVAC), Transport, Fire and Safety, Lighting, Security, Access, etc.
+Industrial	
+Process, Clean Room, Campus
+Energy
+Supply/Demand
+Power Generation, Transport, and Distribution, Low Voltage, Power Quality, Energy Management
+Turbines, Windmills, UPS, Batteries, Generators, Meters, Drills, Fuel Cells, etc.
+Alternative
+Solar Wind, Co-generation, Electrochemical
+Oil/Gas
+Rigs, Derricks, Heads, Pumps, Pipelines
+Consumer and Home
+Infrastructure
+Wiring, Network Access, Energy Management
+Digital Cameras, Power Systems, MID, e-Readers, Dishwashers, Desktop Computers, Washing Machines/Dryers, Meters, Lights, TVs, MP3 Devices, Games Consoles, Alarms, etc.
+Awareness and Safety
+Security/Alerts, Fire Safety, Elderly, Children, Power Protection
+Convenience and Entertainment
+HVAC/Climate, Lighting, Appliances, Entertainment
+Healthcare and Life Science
+Care
+Hospital, ER, Mobile, POC, Clinic, Labs, Doctors’ Offices
+MRI Machines, PDAs, Implants, Surgical Equipment, Pumps, Monitors, Telemedicine, etc.
+
+
+In Vivo/Home
+Implants, Home, Monitoring Systems
+
+
+
+
+Research
+Drug Discovery, Diagnostics, Labs
+
+
+Transportation
+Non-Vehicular
+Air, Rail, Marine
+Vehicles, Lights, Ships, Planes, Signage, Tolls, etc.
+
+
+Vehicles
+Consumer, Commercial, Construction, Off-Highway
+
+
+
+
+Transport Systems
+Tolls, Traffic Management, Navigation
+
+
+Industrial
+Resource Automation
+Mining, Irrigation, Agricultural, Woodland
+Pumps, Valves, Vats, Conveyors, Fabrication, Assembly/Packaging, Vessels/Tanks, etc.
+
+
+Fluid/Processes
+Petrochemicals, Hydro, Carbons, Food, Beverages
+
+
+
+
+Converting/Discrete
+Metals, Papers, Rubber/Plastic, Metalworking, Electronics, Assembly/Test
+
+
+
+
+Distribution
+Pipelines, Conveyance
+
+
+Retail
+Specialty
+Fuel Stations, Gaming, Bowling, Cinemas, Discos, Special Events
+POS Terminals, Tags, Cash Registers, Vending Machines, Signs, etc.
+
+
+Hospitality
+Hotels, Restaurants, Bars, Cafes, Clubs
+
+
+
+
+Stores
+Supermarkets, Shopping Centers, Single Site, Distribution Centers
+
+
+Security / Public Safety
+Surveillance
+Radar/Satellite, Environment, Military Security, Unmanned, Fixed
+Tanks, Fighter Jets, Battlefields, Jeeps, Cars, Ambulance, Homeland Security, Environtment, Monitor, etc.
+
+
+Equipment
+Weapons, Vehicles, Ships, Aircraft, Gear
+
+
+
+
+Tracking
+Human, Animal, Postal, Food, Health, Baggage
+
+
+
+
+Public Infrastructure
+Water Treatment, Building, Environment, Equipment and Personnel, Police, Fire, Regulatory
+
+
+
+
+Emergency Services
+Ambulance, Police, Fire, Homeland Security
+
+
+IT and Networks
+Public
+Services, E-Commerce, Data Centers, Mobile Carriers, ISPs
+Servers, Storage, PCs, Routers, Switches, PBXs, etc.
+
+
+Private Enterprise
+IT/Data Center Office, Privacy Nets
+
+
+
+
+loT Architecture
+
+The loT architecture includes several layers. These layers are designed in such a manner that
+they can meet the requirements of various sectors such as societies, industries, enterprises,
+and governments. The layers of the loT architecture are connected to gather, save, and process
+data. The functions performed by various building blocks are as follows.
+
+Gateways are devices through which data are transmitted from things to the cloud and vice versa. They provide the following functions:
+Pre-processing and filtering of data before transmitting them to the cloud, enabling lesser data volumes for detailed processing and storing
+Sending control commands from the cloud to things to let the things execute the commands using their actuators
+Cloud gateways have the following features:
+Data compression
+Securing data transfer between field gateways and cloud loT servers
+Ensuring compatibility with different protocols
+Communicating with field gateways through various protocols based on the protocol supported by gateways
+Streaming data processors ensure that no data can be lost or corrupted by providing the following features:
+Effective input data transition to a data lake
+Application control
+Data lakes store the data produced by the connected devices in the natural format. If the data are required for meaningful insights, the data will be extracted from a data lake and loaded to a big data warehouse.
+Big data warehouses contain only cleaned, structured, and matched data. They can store the following:
+
+o Context information about the things and devices; examples include the locations of
+sensors
+
+o Commands sent by control applications to things
+
+• Data analytics help data analysts find trends and obtain actionable insights by using the
+data in the big data warehouse. The analysis of the data in the form of schemas,
+diagrams, and infographics reveals the following:
+
+o Device performance
+o Inefficiencies of the loT system and ways to enhance it
+
+Moreover, manually found correlations and patterns further help create algorithms for
+control applications.
+
+• Machine learning allows data analysts to create models for control applications. These
+models are updated regularly depending on the data in a big data warehouse. Examples
+include models for recognizing the patterns of an organization’s employee behavior in
+terms of when they leave and return to the organization and adjusting the lights in the
+premises accordingly. After completing the phase of testing the applicability and
+efficiency of these models, they start to be used by control applications.
+
+• Control applications send automatic commands and alerts to actuators. For example, if
+a pre-failure situation arises in an organization’s equipment/devices, the sensors monitor the state of the devices, and the loT system sends automatic notifications to
+system engineers.
+
+The stored commands in a big data warehouse sent by control applications to actuators
+help in the following:
+
+o Investigating problematic cases; for example, checking the connectivity, gateways,
+and actuators if the actuators fail to execute the commands sent by a control
+application
+
+o Enhancing security by identifying security breaches (possible when detecting
+unusual or huge amounts of commands)
+
+The control applications can be of the following two types:
+o Rule-based control applications that operate based on the rules set by specialists
+
+o Machine-learning-based control applications that use models, which can be updated
+regularly with the data stored in a big data warehouse
+
+• User applications (web or mobile applications) help change the behavior of the
+application controls. For example, if an loT system performs certain actions poorly, user
+applications allow users to do the following:
+
+o Connect to an loT system
+
+o Monitor and control (by sending commands to control applications and setting
+options for automatic behavior) smart things while they are connected to a network
+of similar things.
+Layers of the IoT Architecture
+
+An loT ecosystem is a combination of multiple loT layers and comprises the components that
+allow organizations to connect to their loT devices. Specifically, an ecosystem includes
+dashboards, remotes, gateways, analytics, networks, data storage, and security. The general
+architecture of an loT ecosystem is different for different organizations. The ecosystem model
+that many organizations refer to when attempting to understand the loT architecture includes
+the loT layers.
+
+Layer 1: Device Layer
+
+The device or thing layer of loT includes the hardware that constitutes loT devices. All the
+connected devices are the endpoint for an loT ecosystem, and they acquire data based on a
+particular use case. The devices include the following:
+
+• Sensors (temperature, gyroscope, pressure, light sensors, Global Positioning System
+(GPS), electrochemical, radio-frequency identification (RFID), etc.)
+• Mobile devices (smartphones/tablets)
+• Microcontroller units
+• Networking gear
+• Single-board computers
+
+Layer 2: Communication Layer
+
+The communication (connectivity/edge computing) layer includes the components of
+communication protocols and networks used for connectivity and edge computing. A use case
+is successfully executed with seamless connectivity between loT devices.
+
+• Protocols: For Internet-based loT applications, a Transmission Control Protocol
+(TCP)/Internet Protocol (IP)-based architecture is used. Intranet-based loT use cases
+utilize LAN, RF, Wi-Fi, Li-Fi, etc.
+
+• Gateway: Gateways help manage traffic between loT devices and connected networks.
+To maintain and monitor the traffic, the level-5 gateways are helpful.
+
+Layer 3: Cloud Layer
+
+Servers hosted in the cloud accept, store, and process the sensor data received from loT
+gateways. Many loT solutions are integrated with cloud services. With a comprehensive set of
+integrated services and solutions, loT cloud provides the required insights and perspectives for
+customers. It provides dashboards for monitoring, analyzing, and implementing proactive
+decisions.
+
+Layer 4: Process Layer
+
+The process layer gathers information and processes the received information. It includes the
+following:
+
+• People
+• Businesses
+• Collaborations
+
+• Decision making based on the information derived from policies and procedures of loT
+computing.
+IoT Communication Models
+loT technology uses various technical communication models, each with its own characteristics.
+These models highlight the flexibility with which loT devices can communicate with each other
+or with the client. Discussed below are four communication models and the key characteristics
+associated with each model:
+
+" Device-to-Device Communication Model
+
+In this type of communication, inter-connected devices interact with each other through
+the Internet, but they predominantly use protocols such as ZigBee, Z-Wave or
+Bluetooth. Device-to-device communication is most commonly used in smart home
+devices such as thermostats, light bulbs, door locks, CCTV cameras, and fridges, which
+transfer small data packets to each other at a low data rate. This model is also popular
+in communication between wearable devices. For example, an ECG/EKG device attached
+to the body of a patient will be paired to his/her smartphone and will send him/her
+notifications during an emergency.
+
+• Device-to-Cloud Communication Model
+
+In this type of communication, devices communicate with the cloud directly, rather than
+directly communicating with the client to send or receive data or commands. It uses
+communication protocols such as Wi-Fi or Ethernet, and sometimes uses Cellular as
+well.
+
+An example of Wi-Fi-based device-to-cloud communication is a CCTV camera that can be
+accessed on a smartphone from a remote location. In this scenario, the device (here, the
+CCTV camera) cannot directly communicate with the client; rather, it first sends data to
+the cloud, and then, if the client inputs the correct credentials, he/she is then allowed to
+access the cloud, which in turn allows him/her to access the device at his/her home.
+
+• Device-to-Gateway Communication Model
+
+In the device-to-gateway communication model, the loT device communicates with an
+intermediate device called a gateway, which in turn communicates with the cloud
+service. This gateway device could be a smartphone or a hub that is acting as an
+intermediate point, which also provides security features and data or protocol
+translation. The protocols generally used in this mode of communication are ZigBee and
+Z-Wave.
+
+If the application layer gateway is a smartphone, then it might take the form of an app
+that interacts with the loT device and with the cloud. This device might be a smart TV
+that connects to the cloud service through a mobile phone app.
+
+" Cloud-to-Cloud (Back-End Data-Sharing) Communication Model
+
+This type of communication model extends the device-to-cloud communication type
+such that the data from the loT devices can be accessed by authorized third parties.
+Here, devices upload their data onto the cloud, which is later accessed or analyzed by
+third parties. An example of this model would be an analyzer of the yearly or monthly
+energy consumption of a company. Later, the analysis can be used to reduce the
+company’s expenditure on energy by following certain energy-harvesting or saving
+techniques.
+IoT-Enabled IT Environment
+
+A typical loT-enabled IT environment comprises devices/things that use a gateway for
+communicating over a network to access an organization’s back-end servers running an loT
+cloud platform. This loT platform allows integrating the loT information into the organization.
+
+The different tiers of an loT-enabled IT environment are discussed below.
+
+Things/Devices Tier
+
+The things/devices tier include smartphones, wearable devices, autonomous machines,
+and tags (RFID, NFC, QR codes) that can gather data using their embedded sensors,
+which can track key parameters related to the physical environment. Some examples for
+these parameters are air quality, humidity, light, and pressure. To transfer these
+telemetry data/command and control requests from loT devices through a gateway to
+the cloud, protocols based on wired and wireless networking standards are used.
+Moreover, the command and control data are transferred from the cloud through the
+gateway to the devices. These devices can control the state of another device. For
+example, they can switch off faulty devices or raise an alarm about them. Thus, these
+loT devices allow remote control.
+
+Gateway/Control Tier
+
+The gateway/control tier focuses on communication, offload processing functions, and
+the driving of required actions. The gateway pre-processes the huge amount of data
+generated by sensors before sending it to the cloud tier; thus, it reduces the amount of
+unwanted data forwarded to the cloud tier. This process can reduce the costs of
+network transmission and allow the application of rules based on incoming data. The
+gateway can issue control information such as configuration changes to the devices
+while responding to the data tier’s command and control requests such as
+authentication requests (bidirectional functioning). Moreover, the gateway acts as a
+proxy/edge device to legacy and low-power devices that cannot directly register and
+communicate with the loT platform. In particular, the gateway can route commands
+received from the back-end to the respective device. All the new loT devices, legacy
+devices, and edge devices form the loT device layer.
+
+A typical control tier facilitates efficient communication through a personal area
+network (PAN), a local area network (LAN), Bluetooth, Zigbee, Message Queuing
+Telemetry Transport (MQTT)/TCP, etc., and micro-computing (micro-multi core chips).
+
+Communication/Data Center/Cloud IOT Platform/Cloud Tier
+
+The communication/data center/cloud loT platform/cloud tier focuses on data
+computation to deliver insights and thereby generate business value. It acts as
+middleware by orchestrating the entire loT workflow. It provides back-end business
+analytics to run event processes such as data analysis for creating and adapting business
+rules based on historical trends and then spreads business rules downstream. It needs
+to scale horizontally (for supporting an increasing number of loT devices) and vertically
+(for addressing different loT solutions). The cloud tier’s key functions include the
+following:
+
+o Event processing and analysis
+o Data storage
+o Message and connectivity routing
+o Application integration and enablement
+
+A typical cloud tier comprises software as a service (SaaS), business data analysis, user
+access controls, remote web servers, etc., and open/small operating systems (OSes)
+such as Linux.
+
+In the figure, the loT things/devices layer communicates with a cloud gateway. Here, the
+gateway authenticates and authorizes the devices to participate in the workflow and thereby
+ensures secure communication between the devices and the centralized command center.
+Furthermore, the gateway can deal with different protocols and data formats. The devices and
+local gateways with different protocols (SOAP, REST, AMQP, etc.) register with the cloud
+gateway. Here, without considering the inbound protocol, the cloud gateway can provide a
+view of the device layer to the remaining loT components.
+
+Features of an loT-Enabled IT Environment
+The following features of loT platforms help an IT environment reach its targets quickly:
+• Real-time monitoring involves monitoring loT assets, processing products, maintaining a
+flow, helping detect issues, and taking actions immediately.
+• Real-time analytics involves analyzing loT things and taking steps accordingly. For
+example, it provides graphs and real-time streaming analytics, allowing the business to
+overview its performance and production.
+• Multi-layer security involves preventing unauthorized access to loT things by using
+multi-factor authentication (MFA), Transport Layer Security (TLS), device identity
+management, etc.
+• Data collection involves the exchange of data between loT-enabled organizations using
+different communication protocols. These protocols should be lightweight and should
+provide low-network-bandwidth functionality.
+• Communication among multiple devices involves configuring multiple devices to access
+loT things even remotely at any time and from anywhere.
+
+Discuss the Security in IoT-enabled Environments
+Security in IoT-enabled Environments
+
+With no or inadequate focus on loT device security by manufacturers,
+security measures used to harden the loT device are often insufficient
+
+Therefore, organizations should focus on countering attack scenarios in loT-
+enabled environments. Organizations should focus on securing network
+devices and routers in an loT-enabled environment. This helps restrict the
+attacker from accessing other parts of the network and performing targeted
+attacks
+
+The organization should use multilayered management. An overarching
+multilayered security plan and constant maintenance are necessary to
+effectively secure all these disparate loT devices
+
+Company-wide collaboration and synchronization are required to secure an
+loT-enabled environment
+
+Copyright © by . All Rights Reserved. Reproduction is Strictly Prohibited.
+Security in loT-enabled Environments
+
+Because loT devices are vastly different from each other, the security of devices relies on their
+type and model. With no or inadequate focus on loT device security by manufacturers, security
+measures used for loT devices often fall short. Therefore, an organization should focus on
+securing loT devices and countering attack scenarios in loT-enabled environments.
+
+An organization can secure loT devices by changing the default passwords, disabling unused
+features, updating firmware and applications, and using a legitimate application developed by a
+reliable vendor in the case of loT devices that rely on third-party applications.
+
+An adversary uses a compromised loT device as an entry point to a network and performs a
+lateral movement attack. For example, a compromised smart printer can infect other systems
+and devices connected to the same network. A compromised router can spread malware to all
+the loT devices connected to it. Therefore, organizations should focus on securing network
+devices and routers in an loT-enabled environment.
+
+To secure an loT network and router, the user should map and monitor all the devices, apply
+network segmentation, ensure a secure network architecture, use routers with in-built
+firewalls, and disable unnecessary services such as Universal Plug and Play (UPnP). This helps in
+restricting the attacker from accessing other parts of the network and performing targeted
+attacks.
+
+An organization should use multi-layered management. To secure all the different loT devices,
+an overarching multi-layered security plan and constant maintenance are required. The
+organization should enforce security solutions that safeguard the loT devices and detect
+malware at the endpoint level. It should also use security software that checks the network
+traffic between routers and connected devices to protect the loT devices. Further, it should
+
+utilize network appliances to monitor all the ports and network protocols for detecting advance
+threats and safeguard the loT devices from targeted attacks. Company-wide collaboration and
+synchronization are required to secure an loT-enabled environment.
+
+Module 09 Page 709 Network Defense Essentials Copyright © by EC-Gouncil
+All Rights Reserved. Reproduction is Strictly Prohibited.
+IoT System Management
+loT system management involves the following.
+• Device management
+
+Ensure secure data transmission to facilitate fine interaction between devices and to
+guarantee the proper functioning of devices in an loT system.
+
+o Identify the identity of devices to ensure a trusted device with genuine software
+transmitting reliable data.
+
+o Configure devices and control them as per the requirements of an loT system. For
+example, provide IDs for devices.
+
+o Monitor and diagnose devices to ensure the smooth and secure functioning of loT
+devices.
+
+o Update software and maintain it to add functionality, fix bugs, and address
+vulnerabilities.
+
+• User management
+
+Provide control over the users who have access to an loT system. User management
+includes the following:
+
+o Identify users.
+o Set user roles (owners, guests, etc.).
+o Set access levels for users.
+o Control the access of a few users to specific information.
+Set user ownership.
+Add and remove users.
+Manage user settings.
+
+Allow permissions to perform certain operations within an loT system (for example,
+controlling and recording user activities).
+
+• Security monitoring
+
+To address security breaches at early stages and to prevent malicious attacks on an loT
+system, the following should be performed:
+
+o Log and analyze commands sent by control applications to things.
+o Monitor the actions of users.
+o Store all actions in the cloud.
+o Identify the patterns of malicious behavior.
+o Store samples of malicious activity and compare them with the logs generated by
+the loT system to avoid attacks and their impact.
+
+Stack-wise IoT Security Principles
+
+Several loT devices are connected to the network and eventually to the cloud, which causes
+vulnerability to many threat vectors. To develop end-to-end (E2E) loT solutions, the device,
+communication, cloud, and process layers should be secured. For this purpose, the following
+stack-wise loT security principles should be implemented.
+
+• Need for device intelligence to handle complex security tasks: Most loT devices
+communicate with services, the cloud, servers, etc., through the Internet or Wi-Fi. As
+these devices are powered by microprocessors, they are unable to handle the
+complexity of Internet connectivity and should not be utilized for front-line duty in loT
+applications. Smart devices are secure and robust. They have embedded security
+features and can handle security, encryption, authentication, etc. Hence, smart devices
+should be used for front-line duty in loT applications.
+
+• Security advantage of processing at the edge: Smart loT devices have an edge
+processing feature that processes data locally before sending the data to the cloud, thus
+eliminating the need to forward a large quantity of data to the cloud. Edge processing
+enhances security by processing the data, packing the data into separate packets, and
+sending the data securely to the desired location. It allows users to keep sensitive
+information with them.
+
+loT Security Principles on the Communication Layer
+
+Initiate a connection to the cloud but not from the cloud: Instead of connecting loT
+devices with the Internet, they should be connected to the cloud. Incoming connections
+should be disallowed. Connection to the cloud establishes a bi-directional channel,
+through which the user can control the loT device remotely.
+
+Inherent security of a message: All communications with loT devices should be carefully
+handled. The user must enforce lightweight message-based protocols for loT devices
+that consist of options for double encryption, filtering, queuing, etc. With proper
+labeling, the messages will be handled securely. For example, double encryption secures
+client data when the data pass through the message switch.
+
+loT Security Principle on the Cloud Layer
+
+Identification, authentication, and encryption for machines, rather than humans:
+Users access cloud services with a password. Occasionally, cloud services use two-factor
+authentication consisting of a password and a one-time password generator. For
+humans, passwords are the accepted method of authentication, but machines handle
+digital certificates while accessing cloud services. The system of digital certificates is
+used not only to authenticate transactions but also to encrypt the channel from the
+device to the cloud before the transaction. The cryptographic identification provided by
+the digital certificate cannot be achieved with a user ID and password.
+
+loT Security Principle on the Process Layer
+
+Security of remote control and updates: The remote control of an loT device allows the
+user to perform remote diagnostics of the device, set new configurations, retrieve files,
+etc. The key to secure updates and remote control is to ensure that incoming
+connections to the device are disallowed; however, the device should establish a secure
+bi-directional connection with the cloud and utilize a message switch as a
+communication channel.
+IoT Framework Security Considerations
+
+To design secure and protected loT devices, security issues should be properly considered. One
+of the most important considerations is the development of a secure loT framework for
+building the device. Ideally, a framework should be designed in a way that provides default
+security, so that the developers do not have to consider it later.
+
+Security evaluation criteria for the loT framework are broken down into four parts. Each part
+has its own security-related concerns that are discussed in the evaluation criteria for each part.
+The security evaluation criteria for the loT devices are discussed below:
+
+• Edge
+
+The edge is the main physical device in the loT ecosystem that interacts with its
+surroundings and contains various components like sensors, actuators, operating
+systems, hardware and network, and communication capabilities. It is heterogeneous
+and can be deployed anywhere and in any condition. Therefore, an ideal framework for
+an edge would be such that it provides cross-platform components so that it can be
+deployed and work in any physical condition possible.
+
+Other framework considerations for an edge would be proper communications and
+storage encryption, no default credentials, strong passwords, use of the latest up-to-
+date components, etc.
+
+"• Gateway
+
+The gateway acts as the first step for an edge into the world of the Internet as it
+connects smart devices to cloud components. It is referred to as a communication
+aggregator that allows communication with a secure and trusted local network as well
+as a secure connection with an untrusted public network. It also provides a layer of
+security to all the devices connected to it. The gateway serves as an aggregation point
+for the edge; therefore, it has a crucial security role in the ecosystem.
+
+An ideal framework for the gateway should incorporate strong encryption techniques
+for secure communications between endpoints. In addition, the authentication
+mechanism for the edge components should be as strong as any other component in
+the framework. Wherever possible, the gateway should be designed in such a way that
+it authenticates multi-directionally to carry out trusted communication between the
+edge and the cloud. Automatic updates should also be provided to the device for
+countering vulnerabilities.
+
+• Cloud Platform
+
+In an loT ecosystem, the cloud component is referred to as the central aggregation and
+data management point. Access to the cloud must be restricted. The cloud component
+is usually at higher risk, as it is the central point of data aggregation for most of the data
+in the ecosystem. It also includes a command and control (C2) component, which is a
+centralized computer that issues various commands for the distribution of extensions
+and updates.
+
+A secure framework for the cloud component should include encrypted
+communications, strong authentication credentials, a secure web interface, encrypted
+storage, automatic updates, etc.
+
+• Mobile
+
+In an loT ecosystem, the mobile interface plays an important part, particularly where
+the data needs to be collected and managed. Using mobile interfaces, users can access
+and interact with the edge in their home or workplace from miles away. Some mobile
+applications provide users with only limited data from specific edge devices, while
+others allow complete manipulation of the edge components. Proper attention should
+be given to the mobile interface, as they are prone to various cyber-attacks.
+
+An ideal framework for the mobile interface should include a proper authentication
+mechanism for the user, an account lockout mechanism after a certain number of failed
+attempts, local storage security, encrypted communication channels, and security of
+data transmitted over the channel.
+IoT Device Management
+loT device management helps security professionals to track, monitor, and manage physical loT
+devices from a remote location. Security professionals can use solutions such as Azure loT
+Central, Oracle loT Asset Monitoring Cloud, and Predix to perform loT device management.
+These solutions allow security professionals to update the firmware remotely. Further, loT
+device management helps in providing permissions and enhancing security capabilities to ensure protection against various vulnerabilities.
+
+loT device management can be very supportive in preventing loT attacks as it can provide:
+• Proper authentication, as only trusted and secure devices with proper credentials are enrolled
+• Accurate configuration, controlling devices to ensure proper functionality and improved
+performance. It can also reset the factory settings during device decommissioning.
+• Proper monitoring to detect flaws and diagnose operational issues and software bugs through program logs
+• Secure maintenance of remote devices and frequent device updates with the latest security patches
+
+loT Device Management Solutions
+
+loT device management solutions are used by security professionals, IT admin, or loT
+administrators for onboarding, organizing, monitoring, and managing loT devices. Discussed
+below are some loT device management solutions:
+
+• Azure loT Central
+Source: https://azure.microsoft.com
+
+Azure loT Central is a hosted, extensible software-as-a-service (SaaS) platform that
+simplifies the setup of loT solutions. It helps to easily connect, monitor, and manage loT
+assets at scale. Azure loT Central can simplify the initial setup of an loT solution and can
+reduce the management burden, operational costs, and overheads of a typical loT project.
+Listed below are some of the additional solutions for loT device management:
+• Oracle loT Asset Monitoring Cloud (https://www.oracle.com)
+• Predix (https://www.ge.com)
+• Cloud loT Core (https://cloud.google.com)
+• IBM Watson loT Platform (https://www.ibm.com)
+• AT&T loT Connectivity Management (https://www.business.att.com)
+IoT Security Best Practices
+
+Disable the “guest” and “demo” user accounts if enabled
+Use the “Lock Out” feature to lock out accounts for excessive invalid login attempts
+Implement a strong authentication mechanism
+
+Locate control system networks and devices behind firewalls, and isolate them from the
+business network
+
+Implement IPS and IDS in the network
+
+Implement end-to-end encryption and use public key infrastructure (PKI)
+Use VPN architecture for secure communication
+
+Deploy security as a unified, integrated system
+
+Allow only trusted IP addresses to access the device from the Internet
+Disable telnet (port 23)
+
+Disable the UPnP port on routers
+
+Protect the devices against physical tampering
+
+Patch vulnerabilities and update the device firmware regularly
+
+Monitor traffic on port 48101, as infected devices attempt to spread the malicious file
+using port 48101
+
+Position of mobile nodes should be verified with the aim of referring one physical node
+with one vehicle identity only, which means one vehicle cannot have two or more
+identities
+• Data privacy should be implemented; therefore, the user’s account or identity should be
+kept protected and hidden from other users
+• Data authentication should be performed to confirm the identity of the original source node
+• Maintain data confidentiality using symmetric key encryption
+• Implement a strong password policy requiring a password at least 8-10 characters long
+with a combination of letters, numbers, and special characters
+• Use CAPTCHA and account lockout policy methods to avoid brute-force attacks
+• Use devices made by manufacturers with a track record of security awareness
+• Isolate loT devices on protected networks
+
+IoT Security Tools
+The loT is not the only range of devices connected to the Internet, but it is also a very complex,
+rapidly growing technology. To understand and analyze various risk factors, proper security
+solutions must be incorporated to protect the loT devices. The use of loT security tools helps
+organizations to significantly limit security vulnerabilities, thereby protecting the loT devices
+and networks from different kinds of attacks.
+
+• Bevywise loT Simulator
+Source: https://www.bevywise.com
+
+Bevywise loT Simulator is an intelligible simulation tool to simulate tens of thousands of
+MAQTT clients in a single box. It can be used to develop, test, and demonstrate loT
+servers and managers. loT Simulator can be configured to send real-time messages
+within a range or from a random set of values based on the time and client. Further, it
+can simulate dynamic messages in two message formats, namely, TXT and JSON, like
+real-world loT devices. For flexibly varying the data published in every sequence and to
+make the data in sync with the real device, loT Simulator supports four types of dynamic
+values to be sent as a part of messages: system variable timestamp and client identifier,
+random, range, linear, and constant. loT events can be configured with a predefined
+dataset by uploading a CSV file.
+
+Listed below are some of the additional loT security tools and solutions:
+• SeaCat.io (https://teskalabs.com)
+•  DigiCert loT Security Solutions (https://www.digicert.com)
+•  FortiNAC (https://www.fortinet.com)
+• Darktrace (https://www.darktrace.com)
+• Cisco loT Threat Defense (https://www.cisco.com)
+Module Summary
+
+This module has discussed the loT concepts and why organizations
+opt for loT-enabled environments
+
+It has discussed the loT application areas and loT devices
+
+It has also discussed the loT architecture and loT communication
+models
+
+This module also discussed the security in loT-enabled environments
+and stack-wise loT security principles
+
+It has briefly discussed the security considerations of the loT
+framework and loT device management
+
+Finally, this module ended with a detailed discussion on the best
+practices and tools for loT security
+
+In the next module, we will discuss on cryptography and PKI concepts
+in detail
+Module Summary
+
+This module discussed loT concepts and why organizations opt for loT-enabled environments. It
+discussed loT application areas, loT devices, loT architectures, and loT communication models.
+Furthermore, this module discussed the security in loT-enabled environments and stack-wise
+loT security principles. It also briefly discussed the security considerations of the loT framework
+and loT device management. Finally, this module presented a detailed discussion on the best
+practices and tools for loT security.
+
+In the next module, we will discuss cryptography and PKI concepts in detail.
+
+Module 10 - Cryptography and PKI
+Module Objectives
+With the increasing adoption of the Internet (World Wide Web) for business and personal
+communication, securing sensitive information such as credit card details, PINs, bank account
+numbers, and private messages is becoming increasingly important, albeit more difficult to
+achieve. Today’s information-based organizations extensively use the Internet for e-commerce,
+market research, customer support, and a variety of other activities. Data security is critical to
+online business and communication privacy.
+
+Cryptography and cryptographic (“crypto”) systems help in securing data against interception
+and compromise during online transmissions. This module provides a comprehensive
+understanding of different cryptosystems and algorithms, one-way hash functions, and public-
+key infrastructures (PKls). It also covers various tools used to encrypt sensitive data.
+
+At the end of this module, you will be able to do the following:
+• Describe cryptographic techniques
+• Understand the different encryption algorithms
+• Understand the different hashing algorithms
+• Use different cryptography tools and hash calculators
+• Explain public key infrastructure (PKI)
+
+• Understand digital signatures and digital certificates
+
+Discuss Cryptographic Techniques
+Cryptography enables one to secure transactions, communications, and other processes
+performed in the electronic world. This section deals with cryptography and its associated
+concepts, which will enable you to understand the other topics covered later in this module.
+Cryptography
+“Cryptography” comes from the Greek words kryptos, meaning “concealed, hidden, veiled,
+secret, or mysterious,” and graphia, meaning “writing”; thus, cryptography is “the art of secret
+writing.”
+
+Cryptography is the practice of concealing information by converting plaintext (readable
+format) into ciphertext (unreadable format) using a key or encryption scheme. It is the process
+of converting data into a scrambled code that is encrypted and sent across a private or public
+network. Cryptography protects confidential data such as email messages, chat sessions, web
+transactions, personal data, corporate data, e-commerce applications, and many other types of
+communication. Encrypted messages can, at times, be decrypted by cryptanalysis (code
+breaking), even though modern encryption techniques are virtually unbreakable.
+
+Objectives of Cryptography
+• Confidentiality: Assurance that the information is accessible only to those authorized to
+access it.
+• Integrity: Trustworthiness of data or resources in terms of preventing improper and
+unauthorized changes.
+• Authentication: Assurance that the communication, document, or data is genuine.
+• Nonrepudiation: Guarantee that the sender of a message cannot later deny having sent
+the message and that the recipient cannot deny having received the message.
+
+Cryptography Process
+
+Plaintext (readable format) is encrypted by means of encryption algorithms such as RSA, DES,
+and AES, resulting in a ciphertext (unreadable format) that, on reaching the destination, is
+decrypted into readable plaintext.
+Encryption
+
+Encryption is the practice of concealing information by converting a plain text (readable format)
+into a cipher text (unreadable format) using a key or an encryption scheme. Encryption
+guarantees the confidentiality and integrity of the organization’s data, at rest or in transit.
+
+The encryption algorithm encrypts the plain text with the help of an encryption key. The
+encryption process creates a cipher text that needs decrypting with the help of a key. The
+process of decryption involves the same steps except for the usage of keys in the reverse order.
+
+The encryption process is generally applied while transmitting data through a network, mobile
+phones, wireless transmission, and in Bluetooth devices.
+
+Types of Encryption
+There are two types of encryption.
+• Symmetric Encryption
+• Asymmetric Encryption
+
+Symmetric Encryption
+
+Symmetric encryption requires that both the sender and the receiver of the message possess
+the same encryption key. The sender uses a key to encrypt the plain text and sends the
+resulting cipher text to the recipient, who uses the same key to decrypt the cipher text into
+plain text. Symmetric encryption is also known as secret key cryptography since it uses only one
+secret key to encrypt and decrypt the data. This type of cryptography works well when one is
+communicating with only a few people.
+
+Because the sender and receiver must share the key prior to sending any messages, this
+technique is of limited use over the Internet in the case where individuals who have not had
+prior contact frequently require a secure means of communication. The solution to this
+problem is the public-key cryptography.
+
+The symmetric key encryption can use either stream ciphers or block ciphers. Stream ciphers
+encrypt the bits of a message one at a time, whereas block ciphers encrypt blocks of bits.
+
+Advantages:
+• Itis easy to encrypt and decrypt a message
+• Itis faster than asymmetric encryption
+• Itis used to encrypt large amounts of data
+
+Disadvantages:
+• The communicating parties need to share the key used for transmitting the data
+• Unauthorized access to a symmetric key leads to the compromise of data at both ends
+
+Asymmetric Encryption
+
+Asymmetric encryption was introduced for solving key-management problems. Asymmetric
+encryption involves a public key and a private key. The public key is publicly available, whereas
+the sender keeps the private key a secret. It is also called public key encryption and is used to
+encrypt small amounts of data.
+
+Asymmetric encryption uses the following sequence to send a message:
+1. An individual finds the public key of the person they want to contact in a directory.
+2. This public key is used for encrypting a message that is sent to the intended recipient.
+3. The receiver uses the private key to decrypt the message for reading it.
+
+No one except the holder of the private key can decrypt a message composed with the
+corresponding public key. This increases the security of the information because all
+communications involve only public keys; the message sender never transmits or shares the
+private keys. The sender must link the public keys with the usernames in a secured method to
+ensure that unauthorized individuals, claiming to be the intended recipient, do not intercept
+the information. To meet the requirement of authentication, one can use digital signatures.
+
+Advantages:
+• It is more secure than symmetric encryption.
+• There is no need to distribute the keys.
+
+Disadvantages:
+• It takes a longer processing time than symmetric encryption since it involves various
+combinations of secret keys and public keys.
+• Various complex algorithms involved in the process of asymmetric encryption also
+increase the time taken to implement it.
+Government Access to Keys (GAK)
+Government Access to Keys (GAK) refers to the statutory obligation of individuals and
+organizations to disclose their cryptographic keys to government agencies. It means that
+software companies will give copies of all keys (or at least enough of the key such that the
+remainder can be cracked) to the government. Law enforcement agencies around the world
+acquire and use these cryptographic keys to monitor suspicious communication and collect
+evidence of cybercrimes in the interests of national security. The government promises that it
+will hold on to the keys in a secure manner and only use them when a court issues a warrant to
+do so. To the government, this issue is similar to the ability to wiretap phones.
+
+Government agencies often use key escrow for uninterrupted access to keys. Key escrow is a
+key exchange arrangement in which essential cryptographic keys are stored with a third party in
+escrow. The third party can use or allow others to use the encryption keys under certain
+predefined circumstances. The third party, with regard to GAK, is generally a government
+agency that may use the encryption keys to decipher digital evidence under authorization or a
+warrant from a court of law. However, there is growing concern about the privacy and security
+of cryptographic keys and information. Government agencies are responsible for protecting
+these keys. Such agencies generally use a single key to protect other keys, which is not a good
+idea, as revealing a single key could expose the other keys.
+
+These agencies are not aware of how confidential the information protected by the keys is,
+which makes it difficult to judge how much protection is required. In cases where seized keys
+also protect other information that these agencies have no right to access, the consequences of
+key revelation cannot be determined, because government agencies are not aware of the
+information that the keys protect. In such cases, the key owner is liable for the consequences of
+key revelation. Before owners hand over their keys to government agencies, they need to be
+
+assured that the government agencies will protect these keys according to a sufficiently strong
+standard to protect their interests.
+Discuss Various Cryptographic Algorithms
+
+Encryption is the process of converting readable plaintext into an unreadable ciphertext using a
+set of complex algorithms that transform the data into blocks or streams of random
+alphanumeric characters. This section deals with ciphers and various encryption algorithms
+such as DES, AES, RC4, RC5, RC6, DSA, RSA, MD5, MD6, SHA, etc.
+Ciphers
+
+In cryptography, a cipher is an algorithm (a series of well-defined steps) for performing
+encryption and decryption. Encipherment is the process of converting plaintext into a cipher or
+code; the reverse process is called decipherment. A message encrypted using a cipher is
+rendered unreadable unless its recipient knows the secret key required to decrypt it.
+Communication technologies (e.g., Internet, cell phones) rely on ciphers to maintain both
+security and privacy. Cipher algorithms may be open-source (the algorithmic process is in the
+public domain while the key is selected by a user and is private) or closed-source (the process is
+developed for use in specific domains, such as the military, and the algorithm itself is not in the
+public domain). Furthermore, ciphers may be free for public use or licensed.
+
+• Classical Ciphers
+
+Classical ciphers are the most basic type of ciphers, which operate on letters of the
+alphabet (A—Z). These ciphers are generally implemented either by hand or with simple
+mechanical devices. Because these ciphers are easily deciphered, they are generally
+unreliable.
+
+Types of classical ciphers
+
+o Substitution cipher: The user replaces units of plaintext with ciphertext according to
+a regular system. The units may be single letters, pairs of letters, or combinations of
+them, and so on. The recipient performs inverse substitution to decipher the text.
+Examples include the Beale cipher, autokey cipher, Gronsfeld cipher, and Hill cipher.
+
+For example, “HELLO WORLD” can be encrypted as “PSTER HGFST” (i.e., H•P, E•S,
+etc.).
+
+o Transposition cipher: Here, letters in the plaintext are rearranged according to a
+regular system to produce the ciphertext. For example, “CRYPTOGRAPHY” when
+encrypted becomes “AOYCRGPTYRHP.” Examples include the rail fence cipher, route
+cipher, and Myszkowski transposition.
+
+• Modern Ciphers
+
+Modern ciphers are designed to withstand a wide range of attacks. They provide
+message secrecy, integrity, and authentication of the sender. A user can calculate a
+modern cipher using a one-way mathematical function that is capable of factoring large
+prime numbers.
+
+Types of Modern ciphers
+o Based on the type of key used
+
+e Symmetric-key algorithms (Private-key cryptography): Use the same key for
+encryption and decryption.
+
+e Asymmetric-key algorithms (Public-key cryptography): Use two different keys
+for encryption and decryption.
+
+o Based on the type of input data
+
+e Block cipher: Deterministic algorithms operating on a block (a group of bits) of
+fixed size with an unvarying transformation specified by a symmetric key. Most
+modern ciphers are block ciphers. They are widely used to encrypt bulk data.
+Examples include DES, AES, IDEA, etc. When the block size is less than that used
+by the cipher, padding is employed to achieve a fixed block size.
+
+e Stream cipher: Symmetric-key ciphers are plaintext digits combined with a key
+stream (pseudorandom cipher digit stream). Here, the user applies the key to
+each bit, one at a time. Examples include RC4, SEAL, etc.
+Data Encryption Standard (DES)
+
+DES is a standard for data encryption that uses a secret key for both encryption and decryption
+(symmetric cryptosystem). DES uses a 64-bit secret key, of which 56 bits are generated
+randomly and the other 8 bits are used for error detection. It uses a data encryption algorithm
+(DEA), a secret key block cipher employing a 56-bit key operating on 64-bit blocks. DES is the
+archetypal block cipher—an algorithm that takes a fixed-length string of plaintext bits and
+transforms it into a ciphertext bit string of the same length. The design of DES allows users to
+implement it in hardware and use it for single-user encryption, such as to store files on a hard
+disk in encrypted form.
+
+DES provides 72 quadrillion or more possible encryption keys and chooses a random key for the
+encryption of each message. Because of the inherent weakness of DES vis-a-vis today's
+technologies, some organizations use triple DES (3DES), in which they repeat the process three
+times for added strength until they can afford to update their equipment to AES capabilities.
+
+Advanced Encryption Standard (AES)
+
+The advanced encryption standard (AES) is a National Institute of Standards and Technology
+(NIST) specification for the encryption of electronic data. It also helps to encrypt digital
+information such as telecommunications, financial, and government data. US government
+agencies have been using it to secure sensitive but unclassified material.
+
+An AES consists of a symmetric-key algorithm in which the encryption as well as decryption is
+performed using the same key. It is an iterated block cipher that works by repeating the defined
+steps multiple times. It has a 128-bit block size, having key sizes of 128, 192, and 256 bits
+respectively for AES-128, AES-192, and AES-256. The design of AES makes its use efficient in
+both software and hardware. It works at multiple network layers simultaneously.
+RC4, RCS, and RC6 Algorithms
+Symmetric encryption algorithms developed by RSA Security are discussed below.
+• RC4
+
+RC4 is a variable key-size symmetric-key stream cipher with byte-oriented operations,
+and it is based on the use of a random permutation. According to some analyses, the
+period of the cipher is likely to be greater than 10,100. Each output byte uses 8 to 16
+system operations; thus, the cipher can run fast when used in software. RC4 enables
+safe communications such as for traffic encryption (which secures websites) and for
+websites that use the SSL protocol.
+
+•» RCS
+
+RC5 is a fast symmetric-key block cipher designed by Ronald Rivest for RSA Data Security
+(now RSA Security). The algorithm is a parameterized algorithm with a variable block
+size, a variable key size, and a variable number of rounds. The block sizes can be 32, 64,
+or 128 bits. The range of the rounds can vary from 0 to 255, and the size of the key can
+vary from 0 to 2,040 bits. This built-in variability can offer flexibility at all levels of
+security. The routines used in RC5 are key expansion, encryption, and decryption.
+
+In the key expansion routine, the secret key that a user provides is expanded to fill the
+key table (the size of which depends on the number of rounds). RC5 uses a key table for
+both encryption and decryption. The encryption routine has three fundamental
+operations: integer addition, bitwise XOR, and variable rotation. The intensive use of
+data-dependent rotation and the combination of different operations make RCS a
+secure encryption algorithm.
+
+• RC6
+RC6 is a symmetric-key block cipher derived from RCS. It is a parameterized algorithm
+with a variable block size, key size, and number of rounds. Two features that
+differentiate RC6 from RCS5 are integer multiplication (which is used to increase the
+diffusion, achieved in fewer rounds with increased speed of the cipher) and the use of
+four 4-bit working registers rather than two 2-bit registers. RC6 uses four 4-bit registers
+instead of two 2-bit registers because the block size of the AES is 128 bits.
+
+Digital Signature Algorithm (DSA)
+
+The digital signature algorithm (DSA) is a Federal Information Processing Standard (FIPS) for
+digital signatures. The NIST proposed the DSA for using it in the digital signature standard (DSS),
+adopted as a FIPS 186. The DSA helps in the generation and verification of digital signatures in
+sensitive and unclassified applications. It creates a 320-bit digital signature with a 512-1024 bit
+security.
+
+A digital signature is a mathematical scheme used for the authenticating digital messages.
+Computation of a digital signature uses a set of rules (i.e., the DSA) and a set of parameters,
+using which a user can verify the identity of the signatory and the integrity of the data.
+
+Processes involved in DSA:
+• Signature generation process: A private key is used to sign the digital message.
+• Signature verification process: A public key is used to verify whether the given digital
+signature is genuine.
+
+DSA is a public-key cryptosystem as it involves the use of both private and public keys.
+Benefits of DSA:
+• Less chances of forgery than in the case of a written signature
+• Quick and easy method for business transactions
+• Fake currency problem can be drastically reduced
+
+Rivest Shamir Adleman (RSA)
+
+Ron Rivest, Adi Shamir, and Leonard Adleman formulated RSA, a public-key cryptosystem for
+Internet encryption and authentication. RSA uses a modular arithmetic and elementary number
+theory for performing computations using two large prime numbers. The RSA system is widely
+used in a variety of products, platforms, and industries and is one of the de-facto encryption
+standards. Companies such as Microsoft, Apple, Sun, and Novell incorporate the RSA algorithm
+in their operating systems. RSA can also be found on hardware secured telephones, ethernet
+network cards, and smart cards.
+
+The following sequence is an example of how cryptography uses the RSA algorithm in a
+practical exchange:
+
+• The sender encrypts a message using a randomly chosen DES symmetric key. DES is a
+relatively insecure symmetric-key system that uses 64-bit encryption (56 bits for key-
+length, 8 bits for cyclic redundancy check) to encrypt data.
+
+• The sender then looks up the recipient’s public key and uses it to encrypt the DES key
+using the RSA system.
+
+• The sender transmits an RSA digital envelope, consisting of a DES-encrypted message
+and an RSA-encrypted DES key, to the recipient.
+
+• The recipient decrypts the DES key using his/her RSA private key and uses it to decrypt
+the message itself.
+
+This system combines the high speed of DES with the key management convenience of the RSA
+system.
+MD5 and MD6
+
+MD2, MD4, MDS, and MD6 are message digest algorithms used in digital signature applications
+to compress a document securely before the system signs it with a private key. The algorithms
+can be of variable length, but the resulting message digest always has a size of 128 bits.
+
+The structures of all three algorithms (MD2, MD4, and MDS5) appear similar, although the
+design of MD2 is reasonably different from that of MD4 and MD5. MD2 supports 8-bit
+machines, while MD4 and MD5 support 32-bit machines. The algorithm pads the message with
+extra bits to ensure that the number of bits is divisible by 512. The extra bits may include a 64-
+bit binary message.
+
+Attacks on versions of MD4 have become increasingly successful. Research has shown how an
+attacker launches collision attacks on the full version of MD4 within a minute on a typical PC.
+MDS is slightly more secure but is slower than MD4. However, both the message digest size and
+the padding requirements remain the same.
+
+MDS is a widely used cryptographic hash function that takes a message of arbitrary length as
+input and outputs a 128-bit (16-byte) fingerprint or message digest of the input. MD5 can be
+used in a wide variety of cryptographic applications and is useful for digital signature
+applications, file integrity checking, and storing passwords. However, MD5 is not collision
+resistant; therefore, it is better to use the latest algorithms, such as MD6, SHA-2, and SHA-3.
+
+MD6 uses a Merkle-tree-like structure to allow for large-scale parallel computation of hashes
+for very long inputs. It is resistant to differential cryptanalysis attacks.
+
+To calculate the effectiveness of hash functions, check the output produced when the algorithm
+randomizes an arbitrary input message.
+
+The following are examples of minimally different message digests:
+• echo “There is CHF1500 in the blue bo” | mdSsum
+e41a323bdf20eadafd3t0e4f72055d36
+• echo “There is CHF1500 in the blue box” | mdSsum
+7a0da864a41fd0200ae0ae97afd3279d
+• echo “There is CHF1500 in the blue box.” | md5sum
+2db1ff7a70245309e9f2165c6c34999d
+
+Even minimally different texts produce radically different MD5 codes.
+
+Note: Message digests are also called as one-way hash functions because they cannot be
+reversed.
+Secure Hashing Algorithm (SHA)
+
+The NIST has developed the Secure Hash Algorithm (SHA), specified in the Secure Hash
+Standard (SHS) and published as a federal information-processing standard (FIPS PUB 180). It
+generates a cryptographically secure one-way hash. Rivest developed the SHA, which is similar
+to the message digest algorithm family of hash functions. It is slightly slower than MDS, but its
+larger message digest makes it more secure against brute-force collision and inversion attacks.
+
+SHA encryption is a series of five different cryptographic functions, and it currently has three
+generations: SHA-1, SHA-2, and SHA-3.
+
+• SHA-0: A retronym applied to the original version of the 160-bit hash function published
+in 1993 under the name SHA, which was withdrawn from trade due to an undisclosed
+“significant flaw” in it. It was replaced with a slightly revised version, namely SHA-1.
+
+• SHA-1: It is a 160-bit hash function that resembles the former MD5 algorithm developed
+by Ron Rivest. It produces a 160-bit digest from a message with a maximum length of
+(264 - 1) bits. It was designed by the National Security Agency (NSA) to be part of the
+Digital Signature Algorithm (DSA). It is most commonly used in security protocols such as
+PGP, TLS, SSH, and SSL. As of 2010, SHA-1 is no longer approved for cryptographic use
+because of its cryptographic weaknesses.
+
+• SHA-2: SHA2 is a family of two similar hash functions with different block sizes, namely
+SHA-256, which uses 32-bit words, and SHA-512, which uses 64-bit words. The
+truncated versions of each standard are SHA-224 and SHA-384.
+
+• SHA-3: SHA-3 uses sponge construction in which message blocks are XORed into the
+initial bits of the state, which the algorithm then invertibly permutes. It supports the
+same hash lengths as SHA-2 but differs in its internal structure considerably from the
+rest of the SHA family.
+
+Comparison of SHA functions (SHA-O, SHA-1, SHA-2, and SHA-3).
+
+
+Algorithm 
+and 
+Variant
+Output Size (bits)
+Internal State Size (bits)
+Block Size (bits)
+Maximum Message Size (bits)
+Rounds
+Operations
+Security (bits)
+MD5 (as reference)
+128
+128 (4*32)
+512
+2⁶⁴ - 1
+64
+Add mod 2³², and, or, xor, rot
+≤18 (collisions found)
+SHA-0
+160
+160 (5*32)
+512
+2⁶⁴ - 1
+80
+Add mod 2³², and, or, xor, rot
+<34 (collisions found)
+SHA-1
+160
+160 (5*32)
+512
+2⁶⁴ - 1
+80
+Add mod 2³², and, or, xor, rot
+<63 (collisions found)
+SHA-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- SHA-224
+224
+256 (8*32)
+512
+2⁶⁴ - 1
+64
+Add mod 2³², and, or, xor, shr, rot
+112
+- SHA-256
+256
+256 (8*32)
+512
+2⁶⁴ - 1
+64
+Add mod 2³², and, or, xor, shr, rot
+128
+- SHA-384
+384
+512 (8*64)
+1024
+2¹²⁸ - 1
+80
+Add mod 2⁶⁴, and, or, xor, shr, rot
+192
+- SHA-512
+512
+512 (8*64)
+1024
+2¹²⁸ - 1
+80
+Add mod 2⁶⁴, and, or, xor, shr, rot
+256
+- SHA-512/224
+224
+512 (8*64)
+1024
+2¹²⁸ - 1
+80
+Add mod 2⁶⁴, and, or, xor, shr, rot
+112
+- SHA-512/256
+256
+512 (8*64)
+1024
+2¹²⁸ - 1
+80
+Add mod 2⁶⁴, and, or, xor, shr, rot
+128
+SHA-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- SHA3-224
+224
+1152
+1152
+∞
+24
+And, xor, not, rot
+112
+- SHA3-256
+256
+1088
+1088
+∞
+24
+And, xor, not, rot
+128
+- SHA3-384
+384
+832
+832
+∞
+24
+And, xor, not, rot
+192
+- SHA3-512
+512
+576
+576
+∞
+24
+And, xor, not, rot
+256
+- SHAKE128
+d (arbitrary)
+1344
+1344
+∞
+24
+And, xor, not, rot
+Min(d/2,128)
+- SHAKE256
+d (arbitrary)
+1088
+1088
+∞
+24
+And, xor, not, rot
+Min(d/2,256)
+
+
+HMAC
+
+Hash-based message authentication code (HMAC) is a type of message authentication code
+(MAC) that uses a cryptographic key along with a cryptographic hash function. It is widely used
+to verify the integrity of data and authentication of a message. This algorithm includes an
+embedded hash function such as SHA-1 or MDS. The strength of HMAC depends on the
+embedded hash function, key size, and size of the hash output.
+
+HMAC includes two stages for computing the hash. The input key is processed to produce two
+keys, namely the inner key and the outer key. The first stage of the algorithm inputs the inner
+key and message to produce an internal hash. The second stage of the algorithm inputs the
+output from the first stage and outer key and produces the final HMAC code.
+
+As HMAC executes the underlying hash function twice, it offers protection against various
+length extension attacks. The size of the key and the output depends on the embedded hash
+function, e.g., 128 or 160 bits in the case of MD5 or SHA-1, respectively.
+
+Discuss Various Cryptography Tools
+
+This section deals with various cryptography tools that you can use to encrypt sensitive data to
+protect it from unauthorized access by any party other than the person for whom it is intended.
+MD5 and MD6 Hash Calculators
+
+MD5 and MD6 hash calculators that use different hash algorithms to convert plaintext into its
+equivalent hash value are discussed below.
+
+MD5 Calculator
+Source: https://www.bullzip.com
+
+MD5 Calculator is a simple application that calculates the MD5 hash of a given file. It can
+be used with large files (e.g., several gigabytes in size). It features a progress counter
+and a text field from which the final MD5 hash can be easily copied to the clipboard.
+MDS5 Calculator can be used to check the integrity of a file.
+
+It allows you to calculate the MD5 hash value of the selected file. Right-click the file and
+choose "MD5 Calculator;" the program will calculate the MD5 hash. The MDS Digest
+field contains the calculated value. To compare this MD5 digest with another, one can
+paste the other value into the Compare To field. Obviously, an equal to sign (“•
+appears between the two values if they are equal; otherwise, the less than (“<”) or
+greater than (“>”) sign will tell you that the values are different.
+
+HashMyFiles is a utility that allows you to calculate the MD5 and SHA1 hashes of one or
+more files in the system. It allows you to copy the MD5/SHA1 hash list to the clipboard
+or save it in a text/html/xml file. You can launch HashMyFiles from the context menu of
+Windows Explorer and display the MD5/SHA1 hashes of the selected files or folders.
+
+Some additional MD5 and MD6 hash calculators are as follows:
+• MD6 Hash Generator (https://www.browserling.com)
+• All Hash Generator (https://www.browserling.com)
+• MD6 Hash Generator (https://convert-tool.com)
+• md5 hash generator (https://onlinehashtools.com)
+• HashCalc (https://www.slavasoft.com)
+
+Hash Calculators for Mobile
+Some hash calculators for mobile devices are discussed below.
+• Hash Tools
+Source: https://play.google.com
+
+Hash Tools is a utility for calculating a hash from a given text or decrypting a hash to its
+original text. In this application, the available hash functions are MD5, SHA-1, SHA-256,
+SHA-384, and SHA-512.
+
+• Hash Droid
+Source: https://play.google.com
+
+The Hash Droid utility helps to calculate a hash from a given text or a file stored on the
+device. In this application, the available hash functions are Adler-32, CRC-32, Haval-128,
+MD2, MD4, MDS, RIPEMD-128, RIPEMD-160, SHA-1, SHA-256, SHA-384, SHA-512, Tiger,
+and Whirlpool.
+
+Some additional MDS hash calculators are as follows:
+• Hash Checker (https://play.google.com)
+•  Hashr - Hash & Checksum Calculator (https://play.google.com)
+• Hash Calc (https://play.google.com)
+• Hash Generator - Checksum Calculator (https://play.google.com)
+• Hash Smart Checker (https://play.google.com)
+Cryptography Tools
+
+You can use various cryptographic tools for encrypting and decrypting your information, files,
+etc. These tools implement different types of encryption algorithms.
+
+BCTextEncoder
+
+Source: https://www.jetico.com
+
+The BCTextEncoder utility simplifies the encoding and decoding of text data. It
+compresses, encrypts, and converts plaintext data into text format, which the user can
+then copy to the clipboard or save as a text file. It uses public key encryption methods as
+well as password-based encryption. Furthermore, it uses strong and approved
+symmetric and public-key algorithms for data encryption.
+
+Some additional cryptography tools are as follows:
+
+• AxCrypt (https://axcrypt.net)
+• Microsoft Cryptography Tools (https://docs.microsoft.com)
+• Concealer (https://www.belightsoft.com)
+• CryptoForge (https://www.cryptoforge.com)
+• Cyphertop (https://cyphertop.com)
+
+Discuss Public Key Infrastructure (PKI)
+This section deals with public key infrastructure (PKI) and the role of each component of PKI,
+and certification authorities.
+Digital Signature
+
+A digital signature is a cryptographic means of authentication. Public-key cryptography uses
+asymmetric encryption and helps the user to create a digital signature.
+
+A specific signature function is added to the asymmetric algorithm at the sender's side to
+digitally sign the message and a specific verification function is added to verify the signature to
+ensure message integrity at the recipient side. The asymmetric algorithms that support these
+two functions are called digital signature algorithms.
+
+A hash function is an algorithm which helps users to create and verify digital signatures. This
+algorithm creates a digital representation, also known as a message fingerprint. This fingerprint
+has a hash value that is much smaller than the message, but one that is unique. If an attacker
+changes the message, the hash function will automatically produce a different hash value.
+
+In order to verify a digital signature, one requires the hash value of the original message and
+the hash function used for creating the digital signature. With the help of the public key and the
+new result, the verifier checks whether the digital signature was created with the related
+private key and whether the new hash value is the same as the original or not. Digitally signing
+messages slows the performance of during verification; the hash value of the message is used
+instead of the message itself for better performance.
+
+Digital Certificates
+
+Digital certificates allow a secure exchange of information between a sender and a receiver.
+This enables the use of a public key by the sender to the receiver. A trusted intermediary
+solution is used for securing the public keys, where the public key is bound with the name of its
+owner. Owners of the public key need to acquire their public keys certified from the
+intermediary; the intermediary then issues certificates called digital certificates to the owners,
+which they can use to send the public key to a number of users.
+
+The sender applies for a digital certificate from the certificate authority (CA). Along with the
+encrypted message and the public key, the CA provides other identity validating information.
+The receiver accepts the encrypted message and uses the CA’s public key to decode the digital
+certificate. This allows the receiver to identify the digital signature and obtain the sender’s
+public key and other identification details.
+
+A digital certificate can hold information such as the name of the sender who applied for the
+certificate, expiration date, and a copy of the sender’s public key digital signature of the CA. The
+receivers who receive the digital certificate can check the validity of the certificate using the
+signature attached from the approved authorities using the private key of the authority. Each
+OS and web browser carries authorized certificates from the CA which enables easy validation.
+The main aim of implementing a digital certificate is to ensure nonrepudiation.
+
+Most of the secure sockets layer (SSL)/ transport layer security (TLS) protocols use certificates in order to prevent attackers from changing or modifying the data. Digital certificates are used in
+email servers and code signing.
+
+Digital Certificate Attributes
+• Serial number: Represents the unique certificate identity.
+• Subject: Represents the owner of the certificate which may be a person or an
+organization.
+• Signature algorithm: States the name of the algorithm used for creating the signature.
+• Key-usage: Specifies the purpose of the public key, whether it should be used for
+encryption, signature verification, or both.
+• Public key: Used for encrypting a message or verifying the signature of the owner.
+• Issuer: Provides the identity of the intermediary who issued the certificate.
+• Valid from: Denotes the date from which the certificate is valid.
+• Valid to: Denotes the date till which the certificate is valid.
+• Thumbprint algorithm: Specifies the hashing algorithm used for digital signatures.
+• Thumbprint: Specifies the hash value for the certificate, which is used for verifying the
+certificate’s integrity.
+Public Key Infrastructure (PKI)
+
+A public key infrastructure (PKI) is a security architecture developed for increasing the
+confidentiality of the information exchanged over the Internet. It includes hardware, software,
+people, policies, and procedures required for creating, managing, distributing, using, storing,
+and revoking digital certificates. In cryptography, a PKI helps to bind the public keys with the
+corresponding user identities by means of a CA.
+
+PKI is a comprehensive system that allows the use of public-key encryption and digital signature
+services across a wide variety of applications. PKI authentication depends on digital certificates
+(also known as public-key certificates) that CAs sign and provide. A digital certificate is a
+digitally signed statement with a public key and the subject’s (i.e., a user, company, or system)
+name on it.
+
+The components of a PKI include,
+• Acertificate authority (CA) that issues and verifies digital certificates
+• Aregistration authority (RA) that acts as the verifier for the CA.
+" Acertificate management system for generation, distribution, storage, and verification
+of certificates.
+• One or more directories where the certificates (along with their public keys) are stored.
+
+PKI is widely recognized as a best practice for ensuring digital verification for electronic
+transactions. These are the most effective methods for providing verification during electronic
+transactions. The digital signatures supported by PKI include the following:
+
+• With whom you are dealing (identification)
+• Who is authorized to access what information (entitlements)
+• Averifiable record of the transaction (verification)
+
+Uses of PKI
+
+PKI does not serve only as a business function; it provides the foundation for other security
+services. The primary use of PKI is to allow the distribution and use of public keys and
+certificates with security. The security mechanisms that are based on PKI include email, chip
+card application, value exchange with e-commerce, home banking, and electronic postal
+systems. PKI enables basic security services for a variety of systems as listed below:
+
+• It uses the SSL, internet protocol security (IPsec), and the hypertext transfer protocol
+secure (HTTPS) protocols for communication security.
+• It uses the secure/multipurpose internet mail extensions (S/MIME) and pretty good
+privacy (PGP) protocols for email security.
+• It uses the secure electronic transaction (SET) protocol for value exchange.
+The following are the key benefits of PKI:
+• It reduces the transactional processing expenses.
+• It reduces risk.
+• It improves the efficiency and performance of systems and networks.
+• It reduces the difficulty of security systems with binary symmetrical methods.
+
+Certification Authorities
+
+Certification authorities (CAs) are trusted entities that issue digital certificates. The digital
+certificate certifies the possession of the public key by the subject (user, company, or system)
+specified in the certificate. This aids others to trust signatures or statements made by the
+private key that is associated with the certified public key.
+
+Some popular CAs are discussed below:
+• Comodo
+Source: https://www.comodoca.com
+
+Comodo offers a range of PKI digital certificates with strong SSL encryption (128/256
+available) with Server-Gated Cryptography (SGC). It ensures standards of confidentiality,
+system reliability, and pertinent business practices as judged via qualified independent
+audits. It offers PKI management solutions such as Comodo Certificate Manager and
+Comodo EPKI Manager.
+
+• IdenTrust
+Source: https://www.identrust.com
+
+IdenTrust is a trusted third party that provides CA services for many sectors such as
+banks, corporates, governments, and healthcare. It provides solutions such as digital
+signing and sealing, compliance with NIST SP 800-171, global identity networks, and
+managed PKI hosting services.
+
+•  DigiCert CertCentral
+Source: https://www.digicert.com
+
+CertCentral simplifies the entire lifecycle by consolidating tasks for issuing, installing,
+inspecting, remediating, and renewing TLS/SSL certificates. It manages high-volume
+TLS/SSL certificate issuance for multiple individuals and teams.
+
+• GoDaddy
+Source: https://www.godaddy.com
+
+GoDaddy SSL Certificates offer a complete range of certificates that comply with
+CA/Browser Forum guidelines. They provide the SHA-2 hash algorithm and 2048-bit
+encryption, protection of unlimited servers, etc.
+
+Module Summary
+
+This module has discussed cryptographic techniques,
+different encryption algorithms, and hashing algorithms
+
+It has discussed different cryptography tools and hash
+Y calculators
+
+It has also discussed the public key infrastructure (PKI)
+
+Finally, this module ended with an overview of digital
+signatures and digital certificates
+
+In the next module, we will discuss on data security in detail
+Module Summary
+
+This module discussed cryptographic techniques, different encryption algorithms, and hashing
+algorithms. It discussed different cryptography tools and hash calculators. Furthermore, it
+explained concepts related to public key infrastructure (PKI). Finally, this module presented an
+
+overview of digital signatures and digital certificates.
+
+In the next module, we will discuss data security in detail.
+
+Module 11 - Data Security
+Module Objectives
+
+Data breaches can be costly for organizations. Therefore, it is important to keep organization
+data safe from prying eyes. This module explains the importance of data, and various
+techniques to protect data.
+
+At the end of this module, you will be able to do the following:
+• Understand data security and its importance
+
+Understand the different data security technologies
+• Explain the various security controls for data encryption
+• Use different disk encryption, file encryption, and removable-media encryption tools
+• Explain methods and tools for data backup and retention
+• Understand data loss prevention (DLP) and DLP solutions
+
+Understand Data Security and its Importance
+
+The objective of this section is to explain the importance of data security. The module also
+explains the three states of data, i.e., data at rest, data in use, and data in transit, and
+introduces various data security technologies.
+
+What is Business Critical Data?
+
+Data is the heart of any organization. Critical data contains information that is important for
+business operation. Identification and classification of business-critical data is the first step in
+securing an organization’s data. Every organization has an abundance of data. An organization
+should identify their critical data or files. The criticality of data is based on its importance to the
+organization. This requires analyzing and deciding which information is more important for the
+organization to function properly. Critical data may consist of revenue, emerging trends, market
+plans, database, files including documents, spreadsheet, emails, etc. Loss of such critical data
+can significantly affect the organization.
+
+How Can Critical Data Be Identified?
+• Conduct a business impact analysis to determine the critical functions and data in an
+organization. Identify processes and functions that depend on and co-exist with the
+critical data.
+• Evaluate the impact of data damage on the business.
+
+Examples of Critical Data:
+• Accounting files
+ • Software downloaded (purchased) from the internet
+• Databases or any business-related data 
+• Contact Information (email address
+• The operating system files book) purchased with a computer, software, etc
+• Personal photos, music, and videos
+• Important office documents, spreadsheets, etc.
+• Any other critical file(s)
+Need for Data Security
+
+Data is an important asset for an organization, and it is essential to safeguard it from
+cybercriminals. If an organization’s data is exposed or lost by any means, it can damage the
+organization’s business and reputation to a great extent.
+
+Effect of data loss:
+• Brand damage and reputation loss
+• Competitive advantage loss
+• Loss of customers
+• Market share loss
+• Shareholder value erosion
+• Fines and civil penalties
+"  Litigation/legal actions
+• Regulatory fines/sanctions
+• Significant cost and effort to notify affected parties and recover from breach
+
+There are numerous causes for data loss, including
+•  Loss/theft of laptops and mobile devices
+• Unauthorized data transfer to USB devices
+• Improper sensitive data categorization
+• Data theft by employees/external parties
+• Printing and copying of sensitive data by employees
+• Insufficient response to intrusions
+• Unintentional sensitive data transmission
+
+The resulting data loss leads to loss of brand loyalty and trust, decreases the number of
+customers, and affects market share and shareholder value, regulatory fines, legal proceedings,
+etc. Data breaches and cyberattacks have increased because of the expansion of computer
+networks; hence, data security is necessary to protect the data in an organization.
+
+Data Security
+
+Data security involves the application of various data security controls to prevent any
+intentional or unintentional act of data misuse, data destruction, and data modification.
+
+An organization's data is considered to be secured when they have sufficient provisions for:
+• Restricting data from intentional or accidental destruction, modification, or disclosure
+• Recovering lost or modified data following incidents
+• appropriate data retention and destruction policies
+
+Three Basic States of Data
+
+• Data at rest: This data is inactive and is stored on a device or a backup medium such as
+hard drives, laptops, backup tapes, mobile devices, or at the offsite cloud backup. Data
+at rest remains in a stable state. The data at rest will not move actively in a system or
+network and cannot be accessed by an application or program.
+
+• Data in use: This data is stored or processed by RAM, CPUs, or databases. It is not
+passively stored on the system, but actively moves across IT infrastructure. It is updated,
+erased, processed, accessed, and/or read by the system.
+
+• Data in transit: This data actively moves from one location to another across the
+network, or is encrypted before moving and/or being transmitted through encrypted
+connections such as HTTPS, SSL, transport layer security (TLS), FTPS, etc.
+Example: “Data at Rest” vs “Data in Use” vs “Data in Transit”
+
+A proper implementation of security measures is required in each state to proactively enhance
+data security. The following table describes the various states of data, their specific examples,
+and security controls to protect against attacks.
+
+
+
+Data at Rest
+Data in Use
+Data in Transit
+Description 
+Inactive data stored in digitally at a physical location
+Data stored in memory
+Data traversing using some means of communication
+Examples 
+Customer bank balance stored in database
+Data stored in RAM
+An email being sent
+Security Controls 
+Data encryption
+Password protection
+Tokenization
+Data federation
+Authentication Techniques
+Tight control on this data’s accessibility
+Full memory encryption
+Strong identity management
+SSL and TLS
+Email encryption tools such as PGP or S/MIME
+Firewall controls
+
+
+Data Security Technologies
+
+• Data Access Control
+
+Data access controls enable authentication and authorization of users to access the
+data. It is an important component of security compliance programs that protect
+unauthorized access to confidential information.
+
+• Data Encryption
+
+Protecting information by transforming it so that it becomes unreadable for an
+unauthorized party. It safeguards corporate secrets, classified information, and personal
+information. The encrypted data cannot be read by any unauthorized persons or
+entities.
+
+• Data Masking
+
+Protecting information by obscuring specific areas of data with random characters or
+codes. Data masking protects sensitive data such as personally identifiable information,
+protected health information, payment card information, intellectual property, etc.
+Apart from this, data masking also protects against an insider threat. Implementing data
+masking will bolster the security strategies of an organization.
+
+• Data Resilience and Backup
+
+Making a duplicate copy of critical data to be used for restoring and recovery purposes
+when the primary copy is lost or corrupted, either accidentally or on purpose. Data
+resilience allows the data to remain available to the applications if there is any failure in
+the hosted data. Retaining multiple copies of a data backup help in restoring the data
+with ease and mitigate the risks of data corruption or malicious attacks.
+
+" Data Destruction
+
+It involves destroying the data so that it cannot be recovered and used for a wrong
+motive. The destruction of old hard drives or electronic devices should be done securely
+and safely. Data destruction helps in physically destroying the old information of
+customers and employees.
+
+• Data Retention
+
+Storing data securely for compliance or business requirements. An organization should
+have policies and processes for retention and removal of data. Data retention programs
+have a tremendous impact on data security and can meet the expectations of customers
+and governments in safeguarding privacy.
+
+Discuss Various Security Controls for Data Encryption
+
+The objective of this section is to explain the use of encryption technology to secure the data.
+
+Data Encryption Techniques
+
+• Disk encryption: Encryption of data stored in a physical or logical disk. Full disk
+encryption is the encryption of all data in a disk except the master boot record (MBR).
+The data is automatically converted into a form which cannot be easily deciphered by an
+unauthorized user. In full disk encryption, the data is encrypted while being written on
+the disk, and decrypted when the user reads the data from the disk. The benefits of full
+disk encryption are
+
+o Itisasimple encryption method.
+o The encryption method is clear and coherent to users, applications, and databases.
+o Itis a hardware-based encryption with high performance.
+
+• File-level encryption: Encryption of data stored in files/folders. In this type of
+encryption, the encryption occurs at a filesystem level, and in combination with a
+cryptographic algorithm, the encrypted data will be extremely secure. File-level
+encryption regulates the access of unauthorized users to files or folders on networks or
+shared computers. The advantages of file-level encryption are as follows:
+
+o Each file is encrypted with a discrete encryption key.
+o Access control is enforced using public key cryptography.
+o Both structured and unstructured data are supported.
+
+• Removable media encryption: Removable media encryption prevents removable media
+devices such USB flash drives, portable hard disks, digital cameras, smartphones,
+tablets, etc. from unauthorized access.
+
+Disk Encryption: Implementing Built-in Disk Encryption for Windows
+
+Windows 10 has built-in disk encryption methods to encrypt hard drives and safeguard user
+data. By default, disk encryption is enabled in all devices using Windows 10. There are two
+methods of disk encryption in Windows 10: device encryption and BitLocker. If the users do not
+have device encryption, they can enable standard BitLocker encryption; however, BitLocker is
+not available on Windows 10 Home edition.
+
+Device encryption
+
+It is the simplest encryption method and is available in all editions of Windows 10. If a user
+loses the device, device encryption can protect the data from unauthorized access. This feature
+scrambles the entire system drive and secondary drives connected to the device and allows
+only the user to access the device.
+
+Prerequisites for Device Encryption:
+1. Trusted platform module (TPM).
+2. Unified extensible firmware interface (UEFI).
+3. Checking whether the device meets the device encryption requirements.
+Steps to check whether the device meets the device encryption requirements:
+"Click the Start button.
+• Search for System Information, right-click on the top result, and choose Run as
+administrator.
+• Click System Summary on the left pane.
+• Search Device Encryption Support; the user device support device encryption if it reads
+Meets prerequisites.
+
+To enable TPM on UEFI
+Follow these steps to enable the TPM chip in the user device if it is in a disabled state.
+• Open Settings.
+• Select Update & Security.
+• Select Recovery.
+• Browse to Advanced start up section and click Restart now button.
+• Click on Troubleshoot.
+• Click on Advanced Options.
+• Click on UEFI Firmware Settings.
+• Click Restart.
+• Navigate to security settings.
+• Enable the TPM feature.
+To Enable Device Encryption
+• Go to Start > Settings > Update & Security > Device Encryption.
+• Turn on the Device encryption option.
+
+BitLocker encryption
+
+This protects the data by encrypting the entire volume of data using advanced encryption
+standard (AES) encryption algorithm in cipher block chaining (CBC) or XTS mode with a 128-bit
+or 256-bit key. BitLocker is available in Windows 10 Pro, Enterprise, or Education editions.
+
+To Enable Standard BitLocker Encryption
+
+Sign in with an administrator account.
+Select the Start button.
+Choose Control Panel, then click on System and Security.
+Under BitLocker Drive Encryption, choose Manage BitLocker.
+Select Turn on BitLocker.
+
+Disk Encryption Tools
+
+The common goal of disk encryption tools is to encrypt a disk partition to provide
+confidentiality to the information stored on it. Some disk encryption tools are discussed below.
+
+VeraCrypt
+Source: https://www.veracrypt.fr
+
+VeraCrypt is a software for establishing and maintaining an on-the-fly-encrypted volume
+(data storage device). On-the-fly encryption means that data is automatically encrypted
+just before it is saved and decrypted just after it is loaded without any user intervention.
+No data stored on an encrypted volume can be read (decrypted) without using the
+correct password/keyfile(s) or correct encryption keys. The entire file system is
+encrypted (e.g., file names, folder names, free space, metadata, etc.).
+
+Files can be copied to and from a mounted VeraCrypt volume just like they are copied
+to/from any normal disk (e.g., by simple drag-and-drop operations). Files are
+automatically decrypted on the fly (in memory/RAM) while they are read or copied from
+an encrypted VeraCrypt volume. Similarly, files that are written or copied to the
+VeraCrypt volume are automatically encrypted on the fly (just before they are written to
+the disk) in RAM.
+
+Some additional disk encryption tools are as follows:
+• BitLocker Drive Encryption (https://docs.microsoft.com)
+• FinalCrypt (https://www.finalcrypt.org)
+• Seqrite Encryption Manager (https://www.seqrite.com)
+• FileVault (https://support.apple.com)
+"  Gilisoft Full Disk Encryption (http://www.gilisoft.com)
+
+File Level Encryption: Implementing Built-in File System-level Encryption on Windows
+
+The Encrypting File System (EFS) provides file system-level encryption in Windows (starting
+from Windows 2000), except the home version. The user needs to enable this feature on a
+specific file, directory, or drive. EFS protects the confidential information from unauthorized
+users who have physical access to a computer.
+
+File Encryption with EPS Using Command Prompt
+• Right-click on the Start button and select Command Prompt (Admin).
+• Type the following command:
+cipher /e “<PATH>”
+• Enter the file path with extension and hit Enter.
+
+To enable EPS Using Advanced Attributes in a Selected File/Folder
+• Select the file for encryption using EFS.
+• Right-click on the file and select Properties.
+• Click Advanced
+• Check the box Encrypt content to secure data and click OK
+• Click Apply. A box will appear with the option to encrypt the file only or encrypt the file
+and its parent folder. Select as per requirements, and click OK
+
+File Encryption Tools
+• Advanced Encryption Package
+Source: http://www.aeppro.com
+
+Advanced Encryption Package is a file encryption software for Windows 10, 8, and 7. It
+uses strong and proven algorithms to protect sensitive documents. It supports both file
+and text encryption and uses both symmetric and asymmetric algorithms.
+
+Some additional file encryption tools are as follows:
+• AxCrypt (https://www.axcrypt.net)
+" idoo File Encryption (https://www.idooencryption.com)
+• Cryptomator (https://cryptomator.org)
+•  Encrypto (https://macpaw.com)
+• AES Crypt (https://www.aescrypt.com)
+
+Removable Media Encryption: Implementing Removable Media Encryption in Windows
+Removable media such as USB flash drives, iPods, smartphones, tablets, digital cameras,
+portable hard disks, etc. are prevalent in a workplace and pose a real threat to an organization.
+With these devices, the attackers can easily introduce a malicious code in a network or carry
+sensitive data out of an organization. Hence, encryption is the best way to protect sensitive
+data from being taken out of an organization.
+
+Encryption can be applied to removable media to prevent it from unauthorized access in case of
+loss or theft. This will add an extra layer of security to confidential information. Various
+encryption solutions are available in the market with different features. Some encryption
+solutions encrypt the data stored on a local drive, but not on USB devices, whereas some
+encryption solutions automatically encrypt the data stored on removable media. While
+selecting a removable media encryption solution, it is important to verify how it is configured to
+restrict access to devices using an authorized list, personal devices, an authorized file copy, and
+encryption keys.
+
+Operating systems such as Windows, Linux, and Mac use a couple of methods to encrypt
+removable media such as USB drives. They use either built-in features or third-party encryption
+solutions to encrypt removable media.
+
+Implementing Removable Media Encryption in Windows: BitLocker
+To Enable Removable Media Encryption in Windows 10
+• Plug the removable media device into a USB port on the computer.
+• Go to Start > Control Panel > BitLocker Drive Encryption.
+• Select the removable media device to encrypt and click Turn on BitLocker.
+• BitLocker initialization process will start. Wait for some time to finish the initialization
+process.
+• In the Choose how you want to unlock this drive window, tick the Use a password to
+unlock the drive checkbox and enter a strong password, then click Next.
+• In How do you want to back up your recovery key? window, either choose Save to a
+file or Print the recovery key, then click Next.
+• In the Choose which encryption mode to use window, select Compatible mode if the
+user wants to use the encrypted drive on older versions of Windows, or select New
+encryption mode if the user wants to use the encrypted drive on Windows 10 only.
+Then click Next.
+• Click Start encrypting.
+• Click Close when the encryption process is completed.
+
+Note: Whenever the user tries to connect the encrypted drive, they have to provide the
+password to unlock it.
+
+Removable Media Encryption Tools
+• GiliSoft USB Encryption
+Source: http://www.gilisoft.com
+
+GiliSoft USB Encryption is a solution for USB security that supports the encryption of
+portable storage devices (external drives) and can divide an external drive into two parts
+after encryption: a secure area and a public area. It converts a regular USB flash drive
+into a secured one in less than a minute, and data on the protected area (secure area) is
+encrypted by a 256-bit AES on-the-fly encryption.
+
+Some additional removable media encryption tools are as follows:
+• jidoo USB Encryption (https://www.idooencryption.com)
+• Kakasoft USB Security (https://www.kakasoft.com)
+• Rohos Mini Drive (https://www.rohos.com)
+• McAfee File & Removable Media Protection (https://www.mcafee.com)
+• MFG’s Removable Media Encryption (https://www.managedencryption.co.uk)
+Discuss Data Backup and Retention
+
+Data loss is a major risk that organizations are facing today. Loss of critical data can result in a
+lot of damage to the organization. Any organization that encounters a critical data loss has a
+higher probability of facing serious issues later. Therefore, you should have a strong data
+backup and retention plan in place to deal with such incidents. The objective of this section is to
+explain the concept of data backup and retention.
+
+Introduction to Data Backup
+Data backup is the process of copying or storing important data. A backup copy will help you
+restore the original data when data is lost or corrupted. Backup is a mandatory process for all
+organizations. The process of retrieving lost files from a backup is known as restoring or
+recovery of files.
+
+The main idea behind data backup is to protect data and information and recover the same
+after data loss. Data backup is mainly used for two purposes: to reinstate a system to its normal
+working state after damage, or to recover data and information following data loss or
+corruption.
+
+Data loss in an organization affects its finances, customer relationship, and company data. Data
+loss in personal computers may lead to the loss of personal files, images, and other important
+documents saved in the system.
+
+Reasons for Data Loss
+
+• Human error: Deletion of data purposefully or accidently, misplacement of data storage
+devices, and errors in administering databases.
+• Crimes: Stealing or making modifications to critical data in an organization.
+• Natural causes: Power failures, sudden software changes, or hardware damages.
+• Natural disaster: Floods, earthquakes, fire, etc.
+
+Benefits of Performing a Data Backup
+
+• It offers access to critical data even in the event of a disaster, ensuring peace of mind in
+a workplace.
+• Backup of critical data prevents an organization from losing its business. It also helps
+them retrieve data anytime.
+
+• Data recovery helps organizations recover lost data and ensure business continuity.
+
+It is recommended that every organization performs a data backup on a regular schedule to run
+their business successfully and efficiently.
+
+To avoid severe damage to an organization’s assets, it is important to design a strategy for a
+successful data backup process. Going forward, this data backup strategy can act as a blueprint
+while working on the data backup process for the entire organization. Certain companies also
+create a data backup policy that is required while implementing a backup strategy.
+
+Data Backup Strategy/Plan
+
+An ideal backup strategy includes steps ranging from selecting the right data to conducting a
+test data restoration drill. Although the backup strategy might differ among organizations, it is
+important to consider the following features before drafting a backup strategy:
+
+• The backup strategy should have a data recovery feature from any external device.
+These devices may include servers, host machines, laptops, etc.
+• If the data loss is because of a natural disaster, the backup strategy should not be
+restricted to only a certain number of incidents. The strategy should also cover the
+methods for recovering the data after a natural disaster.
+• The strategy should include the steps to recover data at the earliest.
+• The lower the cost for data recovery, the more the financial benefit to the organization.
+• Auto recovery options should be included in the backup strategy as well, as they reduce
+the chances of human error during the recovery process.
+
+Steps involved in data backup strategy/plan:
+
+1. Identifying the critical business data 
+2. Selecting the backup media 
+3. Selecting a backup technology
+4. Selecting the appropriate RAID levels
+5. Selecting an appropriate backup method
+6. Selecting the backup types
+7. Choosing the right backup solution
+8. Conducting a recovery drill test
+
+Selecting the Backup Media
+
+Choosing the best backup media is a common concern within most organizations. The selection
+of a wrong media device can lead to a segregation of data across different media devices. With
+a carefully considered plan, selecting an appropriate media will enable a better level of data
+backup.
+
+Once the data is identified, it is important to choose an appropriate backup media to store the
+data. Backup media selection depends on the type and amount of data in the backup. At times,
+data backup consumes a large amount of space; consequently, an increased attention is
+necessary to select the best backup media for a situation, and to fulfill the organizational needs.
+
+Choosing the best backup media is based on the following factors:
+
+• Cost: Organization should have backup storage mediums that best fit their budget. The
+backup media should have more storage space than the data it will contain.
+• Reliability: Organizations must be able to rely on the data stored on the backup media
+without fail. Organizations must select a media that is reliable and not susceptible to
+damage or loss.
+• Speed: Organizations should select backup mediums which require reduced number of
+human interactions during the backup process. Speed becomes a concern if the backup
+process cannot be completed when a machine is idle.
+• Availability: The unavailability of the backup medium could be an issue following data
+loss or data corruption. Organizations should decide on a medium that is always
+available.
+• Usability: Organizations should select a media that is easy to use. An easy media type
+has a greater flexibility during the backup process.
+
+Examples of Data Backup Media Devices
+
+• Optical Disks (DVD)
+
+DVD recordable disks can store up to “200 GB of data and are readily available. DVDs
+store more data and are available at affordable rates, in bulk if need be. However, they
+are not used as much as in the past, as external hard drives are available at reasonable
+prices and can store more data than DVDs.
+
+o Advantage:
+e Less expensive , easy to store, and transport
+o Disadvantage:
+e Several manual disk swaps may be required because of the limited data capacity
+e Recording and verifying a backup is slow
+• Portable Hard Drives/USB Flash Drives
+
+Portable hard drives are considered a better medium for data backup than a DVD. They
+are available in high capacities and can also be used for smaller backups. Flash drives are
+available in different sizes and have the ability to store large backup files.
+
+RAID is another available hard drive option. It contains two or more hard drives. The
+second drive may be used to copy data stored in the first drive. This process allows
+important data to be preserved. Any change in the data will be automatically reflected
+in all other drives as well.
+
+o Advantages:
+
+e Relatively higher storage capacity than optical disks
+
+e Ideal for the home or small offices
+e Faster recording of backups
+o Disadvantages:
+e Expensive than DVD
+e Less recommended for small backups
+
+• Tape Drives
+
+A Tape drive is considered as the best media for data backup. It facilitates data backup
+at an enterprise level. Tape drives are used for storing programs and data. There is no
+limit in storage capacity and can be used to store large amounts of data.
+
+o Advantages:
+e Media for enterprise-level backups
+e Easy to store and transport
+e Requires no user intervention
+e Tape backup is completely automatic
+
+o Disadvantages:
+e Expensive for home users
+e Home computers require additional hardware and software updates
+
+Redundant Array Of Independent Disks (RAID) Technology
+
+Many organizations depend on RAID technology for handling their critical backup needs,
+especially with the increase in data flow and data volume. Organizations are expanding their
+networks to improve their productivity. However, this additional increase can cause network
+bottlenecks. The probability of losing data because of disaster, threats, mistakes, and hardware
+failures hamper an organization’s ability to grow. RAID technology overcomes these situations
+providing an option for data availability, high performance, efficient and accessible recovery
+options without a loss of data.
+
+Understanding RAID Technology
+
+RAID technology is used to store data in different places on several disks. Storing the data on
+multiple disks improves the performance of I/O operations. RAID technology functions by
+implementing multiple hard disks as a single logical disk. It allows a more balanced storage of
+the same data across an array of disks. An effective implementation of this technology helps
+address the complex issues in fault tolerance. The data organized in RAID levels depends on the
+RAID storage techniques and installation methods. Usually, the implementation of RAID is done
+on a server. Although personal computers do not necessarily need this technology, they can still
+setup and utilize it in a smaller environment than an enterprise.
+
+RAID has six levels for functioning effectively: RAID 0, RAID 1, RAID 3, RAID 5, RAID 10, and RAID
+50. Each level has the following features:
+
+• Fault tolerance: Even if a disk fails to work, other disks will continue to function
+normally.
+• Performance: RAID achieves high performance during read and write processes across
+multiple disks.
+• Competence: This is defined by the amount of data stored. The storage capacity of disks
+depends on the chosen RAID level. The storage capacity need not be equal the size of
+the individual RAID disks.
+
+All the RAID levels depend on the storage techniques listed below:
+• Striping: Striping divides the data into multiple blocks. These blocks are further written
+across the RAID system. Striping improves the data storage performance.
+• Mirroring: Data mirroring makes image copies of the data and simultaneously stores
+this data across the RAID. This affects fault tolerance and data performance.
+• Parity: Parity uses a striping method to calculate the parity function of a data block.
+During a drive failure, the parity recalculates the function using a checksum method.
+
+Advantages/Disadvantages of RAID Systems
+
+Before RAID technology was introduced, many organizations used a single drive to store data.
+RAID technology is now found across all storage devices in an organization. Advantages and
+disadvantages RAID depend on the implemented level.
+
+Advantages of RAID Systems
+
+Performance and reliability: RAID technology increases the read/write performance of
+the data on disks. The speed is much faster than when using a single drive as storage. It
+improves the performance by distributing the |/O. A RAID controller distributes data
+over several physical drives, ensuring that a single drive in the RAID system is not
+overburdened. RAID sustains the reliability of data even if a disk fails. Failed
+components can be replaced in a RAID system without shutting the system down. This
+feature is called hot swapping or hot plugging . The replacement process does not affect
+the network or how the other disks function.
+
+Parity check: Parity check is a process where the RAID system compares the data stored
+in a crashed system with the data stored in other disks. This check process is
+accomplished on all drives. The parity check is performed after mirroring the data.
+Regular parity checks detect the probability of a system crash, thereby preventing data
+loss.
+
+Data redundancy: A disk can fail anytime. Therefore, data redundancy is important for
+an organization. RAID provides enhanced data redundancy in case of a hardware failure.
+
+Disk striping: Disk striping improves the read/write performance of data. The data is
+divided into small chunks and spread over multiple disks. Depending on the
+implemented RAID level, the data is divided into bytes, bits, or blocks. Data reading and
+writing can be done simultaneously on a RAID system.
+
+System uptime: This metric detects the reliability and stability of a computer. System
+uptime defines the time till which a system can be left unattended without any
+assistance. Configuring RAID on a system helps enhance system uptime. A high system
+uptime in an organization signifies a high productivity.
+
+Disadvantages of RAID Systems
+
+Writing network drivers: RAID technology is designed to be widely used on servers. A
+major disadvantage of RAID technology is the writing of all network drivers. RAID
+technology is complex, and this process can be time consuming.
+
+Non compatibility: Different systems support different types of RAID drives. Certain
+hardware or software components may not be compatible with the RAID drive
+configured on a server. This non compatibility may lead to the RAID not functioning
+properly. The compatibility between RAID drives, hardware, and software must be
+checked prior to configuring a system. RAID can protect data for all applications
+available on the network. For example, RAID is not compatible with system imaging
+programs.
+
+Loss of data: All RAID drives function in the same environment. They can become
+nonfunctional because of mechanical issues. Thus, the potential data loss increases if
+the disks fail one after another. When two drives fail at the same time, recovering the
+data from the disk becomes difficult. For example, RAID 5, where a drive used
+exclusively for parity cannot recreate the first drive if a second drive fails too.
+
+Time consumed in rebuilding: The increase in drive capacity has been much more than
+the increase in transfer speed. Recovering data from drives with a large storage capacity
+can be time consuming. In such scenarios, rebuilding a failed disk can also be time
+consuming. Increasing the number of drives does not help increase the data transfer
+speed.
+
+Cost: Implementation of RAID technology can be costly. Organizations need to hire
+consultants to sustain its performance. It also requires external RAID controllers and
+hard drives to function correctly, and this adds to the overall cost.
+
+RAID cannot protect the data and offer a performance boost for all applications.
+RAID should be maintained by commercial consultants.
+RAID configuration is difficult.
+RAID Storage Architecture
+
+The RAID architecture depends on two principles: redundancy and parallelism, providing a wide
+range of storage options with better performance and freedom from disk failures. The
+Internet’s increasing footprint has led to an increase in the use of RAID systems because of their
+high data storage capabilities and management systems. Many available RAID implementations
+depend on the following factors: parallelism, duplication, and redundancy.
+
+In a RAID architecture, a switch receives the data from servers connected to the network. The
+switch then sends the data to the processor at a later stage. The processor transfers the
+received data to a RAID controller. The RAID controller may be implemented either as a
+hardware using a RAID-on-Chip (ROC) or in a software. The ROC can contain the I/O interfaces,
+a processor, a host interface, and a memory controller. The ROC is installed directly in a
+motherboard using an expansion card, or in an external drive enclosure.
+
+The RAID storage architecture outlines how the RAID server functions. The processor controls
+the entire functioning of the drive arrays and interfaces. It provides flexible and high-
+performance functions. The architecture in the figure above shows a RAID system can depend
+on hard disk drives (HDDs) as well as SSDs. The processor requires DRAM and NAND flash
+memory. The NAND flash memory provides a nonvolatile storage to the primary RAID memory
+cache.
+
+A battery backup or an ultra-capacitor unit in the primary RAID memory cache is helpful when
+the RAID control processor suffers from a power failure. In this scenario, the battery backup
+independently copies the DRAM contents to the NAND flash memory. A battery backup is an
+inexpensive alternative during a power loss. The architecture shows the requirement of a
+nonvolatile memory in the RAID controller firmware, RAID journal, and transaction and error
+log files.
+
+Major Components of a RAID Architecture
+
+• RAID controller: This is either hardware- or software-based and contains the HDDs or
+solid state drives as a single logical unit. A RAID controller has the permission to access
+multiple copies of files present on multiple disks, thereby preventing damage and
+increasing the system performance. In a hardware RAID, a physical controller manages
+the RAID array with a controller in the form of a PCI card that supports SATA or SCSI. A
+software RAID works similarly to a hardware RAID, except that their performance is
+lower than the former.
+
+• Primary RAID memory cache: The RAID controller has a direct access to the cache
+memory, enabling faster read and write access to the storage system. The cache is used
+to store the changing data. The cache memory is bigger in size and uses high-speed
+SDRAMs. A normal cache memory has a write cache and a separate read cache. The
+read cache decreases the latency of the read process. There are two types of write
+cache memories:
+
+o Write-through mode: This bypasses the cache memory and writes the data directly
+to the disk after the host sends it. The host sends the next data item after receiving a
+confirmation that the writing process has been completed.
+
+o Write-back mode: Data sent from the host is written to the cache memory. The host
+may perform other actions while the RAID controller transfers data from the cache
+to the disk drive. The RAID controller acknowledges the write process to the host
+soon after writing the data to the cache. Issues may arise if a RAID controller sends
+an acknowledgment before the data has been completely written on the disk.
+
+• IDE, SATA, or SCSI interfaces: IDE, SATA, or SCSI are device cables that transmit
+read/write signals to and from the drive. These are mostly used for internally connecting
+the drives. Moreover, servers are connected using these interfaces.
+
+o IDE: Integrated drive electronics (IDE) allows the connection of two devices per
+channel. It is normally used for internal devices as the cables are large and flat.
+
+o SATA: Serial ATA deals with hot plugging and serial connectivity. The hot plugging
+technique may be used to replace computer components without shutting down the
+system. SATA enables only one connection per connector and is not flexible for
+industrial purposes.
+
+o SCSI: Small computer system interface (SCSI) allows multiple devices to be
+connected to a single port at the same time. SCSI uses a parallel cable for attaching
+internal and external devices.
+
+• nvSRAM: Nonvolatile SRAM, or nvSRAM, has a faster read and write process (20 ns read
+and write access time) because of the presence of a standard asynchronous SRAM
+interface. nvSRAM ensures adequate data storage capabilities without the need for a
+battery during a shut down. nvSRAM is best used in applications that require high speed
+and nonvolatile storage at a low cost, such as in the medical industry. nvSRAM backups
+the data even in the event of a power failure.
+
+• Multiport memory controller: An MPMC provides access to memory for up to eight
+ports. A memory controller can be present as a separate chip or as an integrated
+memory. It provides access to a memory bank, and helps achieve a high efficiency with
+random address accesses.
+
+•» NAND flash memory: Flash memory is a storage medium designed from electrically
+erasable programmable read-only memory (EEPROM). NAND and NOR are two types of
+flash memories. It provides a nonvolatile storage for the RAID system's primary cache.
+Its primary aim is to reduce cost and increase capacity. It does not require power to
+retain the data. It can improve its read-write cycles with reduced voltage demands.
+
+• SDRAM: Synchronous dynamic random access memory or synchronous DRAM (sDRAM)
+is a memory that is synchronized with the processor’s clock speed. This increases the
+number of instructions the processor can process. SDRAM speed is measured in Mega
+Hertz (MHz). It is divided into several sections called banks that allow the device to
+operate on several memory access commands simultaneously.
+
+• Disk: The hardware presents the RAID to the host system as a single and large disk.
+
+RAID Level 0: Disk Striping
+
+Depending on the requirement of your organization, you can choose any RAID level. RAID levels
+are based on performance, fault tolerance, or both.
+
+RAID O deals with data performance. In this level, data is broken into sections and written
+across multiple drives. The storage capacity of RAID 0 is equal to the sum of the disks’ capacities
+in the set. RAID O does not provide fault tolerance. It requires a minimum of two drives. It does
+not provide data redundancy. A failure of one disk can lead to the failure of all disks in a level 0
+volume. The probability of recovering data from a RAID level 0 is minimal.
+
+The data distribution in a RAID level O is equal among all the disk sets, resulting in high
+performance. With concurrent high performance, the throughput of the read and write
+operations on multiple disks is equal to the throughput of the array of disks. Increased
+throughput is an advantage of RAID O, considering that data recovery is not available. Software
+and hardware RAID controllers support RAID 0, helping boost server performance.
+
+Example: Assume that the IT infrastructure has a hard disk with high performance. The data in
+the hard disk is transferred at a remarkably high speed. All the large and critical files are stored
+in this disk. However, if this disk fails, the entire contents of the files will be affected, leading to
+the unavailability of the data. It is advisable not to store any critical data in a RAID level 0.
+
+Advantages of RAID Level 0
+
+• Read and write performance: RAID level 0 has a good read and write performance. The
+performance is even better when the controller supports independent reads and writes
+to different disks in the array.
+• Cost: RAID level 0 is more cost effective than the other RAID levels.
+• Implementation: Is easy to implement as the data is divided in a sequential set of
+blocks. There is no storage loss as the maximum capacity is utilized.
+
+Disadvantages of RAID Level 0
+• No redundancy: With no data redundancy, data loss is greater.
+• Noncritical data: Data that is not critical to the organization can be stored on RAID level
+0. This level does not use mirroring. Recovery is not possible if critical data is lost on
+RAID level 0.
+• Unreliable: If one disk fails, the entire network will be affected.
+RAID Level 1: Disk Mirroring
+
+A typical RAID 1 contains an exact copy of the data on two or more disks. RAID 1 writes data on
+multiple drives and multiple mirror drives at the same time. The failure of one drive does not
+affect the data on other drives. This allows data retrieval from the mirror drive. Similar to RAID
+0, RAID 1 provides no parity, stripping, or spanning of disk space across multiple disks. RAID 1
+can be used in accounting, payroll, and other financial applications.
+
+RAID 1 is suitable in environments where read performance matters more than write
+performance. RAID 1 has improved read performance because the data in a disk can be read at
+the same time simultaneously.
+
+RAID level 1 provides data reliability in case of a disk failure as it can still provide access to the
+same data mirrored on other disks. In a RAID 1 hardware implementation, a minimum of two
+disks are required. In a software RAID 1, data can be copied to a disk volume. RAID 1 reduces
+the total disk capacity by half.
+
+Example: If a RAID 1 server is configured with two 4 TB drives, the storage capacity will be 4 TB
+and not 8 TB.
+
+The drive that accesses the data first will service the request. The write throughput in RAID 1 is
+always slower because every drive needs to be updated. Thus, its performance is limited by the
+slowest drive. It is only as fast as its slowest drive. RAID 1 will continue to function as long as
+there is at least one working drive.
+
+Advantages of RAID Level 1
+
+• High read performance: Because there are two disks, the read performance is higher in
+a RAID level 1 system. Data can be read simultaneously while being written on the other
+disk. Thus, the redundancy is excellent.
+• Compatibility: RAID 1 is compatible with hardware and software RAID systems,
+including controllers.
+• Reliability: The mirroring feature in a RAID 1 ensures the data will be available, making
+it more reliable than a RAID level 0.
+
+Disadvantages of RAID Level 1
+• Capacity: RAID level 1 undergoes duplexing, which needs twice the amount of disk
+space for storage.
+• Hot swapping unavailable: If a disk fails to run, it cannot be replaced while the server is
+still in operation. This is called hot swapping. RAID level 1 does not support hot
+swapping.
+
+RAID Level 3: Disk Striping with Parity
+
+RAID level 3 is disk striping with parity. It uses striping and parity as its main features to store
+data. To implement a RAID level 3 system, a minimum of three disks are required. The data is
+stored on multiple drives at the byte level. This RAID level dedicates one drive to store the
+parity information. The byte level division allows the drives to work simultaneously. At any
+point in time, either a read operation or a write operation can take place. RAID 3 is a good
+choice for specialized databases or single-user systems.
+
+The RAID level 3 has a high transfer data rate along with data security. It can perform data
+recovery and error correction by calculating an exclusive OR (XOR) of the information recorded
+on the parity drive.
+
+Advantages of RAID Level 3
+• High throughput: RAID level 3 provides a high throughput for read and write operations
+for large data transfers.
+• Resistant: This RAID level is resistant to disk failures and breakdowns.
+Disadvantages of RAID Level 3
+• Complexity: Installation and configuration of a RAID level 3 system is complex. Its
+implementation necessitates a larger number of resources.
+• Slow performance: Random operations affect its performance, thereby reducing its
+speed.
+
+RAID Level 5: Block Interleaved Distributed Parity
+
+RAID level 5 involves a block-interleaved distributed parity; it includes a block-level striping with
+a distributed parity. The parity information is distributed among all drives except one. The data
+chunks in a RAID level 5 system are larger than the regular I/O size, but they can be resized. To
+prevent data loss following a drive failure, data can be calculated from the distributed parity.
+
+The RAID 5 needs at least three disks; however, more than three disks can be used for a better
+performance. RAID 5 is not a good choice for write operations on the system. Rebuilding the
+RAID 5 array following a disk failure takes a long time. The performance can be degraded when
+the array is being rebuilt, making it vulnerable to additional disk failures. This level offers
+significantly better read performance as the disks independently process the data requests.
+
+RAID 5 is most often found in file and application servers, database servers, along with web,
+email, and news servers.
+
+Advantages of RAID Level 5
+• Read data: Among all RAID levels, level 5 has the highest read data transaction rates.
+• Withstand failure: RAID 5 can withstand the failure of a single drive and is not affected
+by the loss of data.
+• Hot swapping: In case of a disk failure, the failed disk can be replaced with a new one,
+without a server shutdown.
+
+Disadvantages of RAID Level 5
+• Slow write operation: Servers built using RAID 5 suffer from performance issues with
+write operations, and these can eventually result in reduced speeds.
+
+Example: Employees accessing a database on a RAID 5 server will reduce the server’s
+production time.
+
+RAID Level 10: Blocks Striped and Mirrored
+
+RAID level 10 includes disk striping and mirroring in a nested hybrid RAID level. It is a
+combination of RAID level 1 and RAID level 0. It is also called as a “stripe of mirrors.” This level
+can symbolically be represented as RAID 1+0 or RAID 10. RAID 10 includes the mirroring of RAID
+1 without parity and the striping of RAID 0. The performance of RAID 10 is higher than a RAID 1.
+RAID level 10 has the same fault tolerance as RAID level 1. It requires a minimum of four drives
+for its operation. RAID 10 is a great choice for database servers, web servers, email servers,
+etc., and can be implemented on hardware or software. The mirroring provides redundancy
+and improves performance. The data striping provides maximum performance.
+
+Advantages of RAID Level 10
+• Improved I/O operations: With a combination of RAID levels 1 and 0, it provides
+improved I/O operations.
+• Better throughput: Compared with other RAID levels, RAID 10 provides better
+throughput and higher latency.
+• Efficient write operations: The write operations are efficient in this level. Therefore,
+RAID 10 is often implemented on database servers and other servers that perform write
+operations.
+
+Disadvantages of RAID Level 10
+• Expensive: RAID 10 is expensive than other RAID levels as it requires twice as many
+disks.
+
+RAID Level 50: Mirroring and Striping across Multiple RAID Levels
+
+RAID level 50 includes mirroring and striping across multiple RAID levels. This level is a
+combination of a level 0 block-level striping and a level 5 distributed parity. The configuration of
+RAID level 50 requires a minimum of six drives. This level undergoes a hot swapping process
+when a disk fails. A drive from each segment can fail and the array will recover. If more than
+one drive fails in a segment, the array will stop functioning.
+
+RAID 50 is an improvement over RAID 5, specifically for its write operation and fault tolerance.
+RAID level 50 can be implemented on servers that run applications requiring higher fault
+tolerance, capacity, and random access performance. This level offers data protection and
+faster rebuilds than a RAID 5 system. A failed disk in a segment only affects that segment and
+not the entire array. Only that segment is then rebuilt. The rest of the array functions normally.
+
+Advantages
+
+• Security: The data stored in a RAID 50 is more secured than in a RAID 5. With a larger
+storage capacity, this level offers better security than RAID 5.
+• Nondegradable: With the use of a minimum of six drives in the configuration, failure of
+one disk does not impact the server function on this level.
+• Read and write performance: The read and write performance of RAID level 50 is far
+better than RAID level 5.
+
+Disadvantages
+• Controller: Only a sophisticated controller can handle RAID level 50.
+
+Storage Area Network (SAN)
+
+A storage area network (SAN) is a high performance network that interconnects storage devices
+with multiple servers. The role of a SAN is to transfer stored resources available on the common
+network and reorganize them on an independent and high-performance network. This helps
+the servers to share their storage across the network. Primarily, a SAN enhances storage
+devices such as tape drives, disk drives, file servers, RAID, etc. A SAN implementation makes
+disk maintenance controllable and easier. The implementation needs a cable, a switch, and host
+bus adapters. Each storage system on the SAN must be interconnected, and in case of a physical
+interconnection, the bandwidth should support extreme data activities.
+
+We know that systems in a network connect to storage devices. However, a SAN
+implementation is necessary to ensure that all systems in a network are connected to each
+available storage device on the network. SAN allows these systems to take the ownership of
+storage devices; systems can exchange the ownership of storage devices among themselves.
+
+Understanding Storage Sharing
+
+The working of a SAN depends on client-server communication. Every organization has multiple
+servers that are connected to the systems.
+
+Example: If computer A needs some data from computer B, it will need a copy of the data from
+the server to which computer B is connected. This can be done through file transfer, inter-
+process communication, and backup. Although the data is transferred from computer B to
+computer A, it is possible that computer A may encounter untimely data errors, an expensive
+transfer between the two servers, or other operational processes. SAN architecture is the
+perfect solution for this issue. In SAN architecture, all servers are connected to storage devices
+such as tape drives, RAIDs, disk systems, etc. through a fiber channel. Thus, instead of
+communicating with computer B for the data, computer A can directly get a copy of the data
+from the storage devices connected to the servers. For this process to be successful, data
+storage devices act as a common access point for all the servers.
+
+SAN storage sharing eliminates the scheduling of data transfers among servers. It reduces the
+cost of data transfer among servers. Storage devices help in timely transfer of data. SAN
+storage offers only block-level operations that do not provide file abstraction.
+
+However, if the file systems are structured on top of SAN, file access is provided which is known
+as a SAN file system.
+
+Now-a-days, in large organizations, SAN is a storage pool for servers that are connected via a
+network. The fiber channel is now replaced by iSCSI, which has become the choice of many
+mainstream organizations. Whatever be the size of the organization, SAN has become a
+consolidation of workloads in the network.
+
+A SAN supports data archival, backup, restore, transfer, retrieval, migration, and mirroring from
+one storage device to another. The communication infrastructure layer provides the physical
+connections to the network devices. The management layer organizes the connections, storage
+elements, and computer systems. The storage layer hosts the storage devices.
+
+Advantages of SAN
+
+With rapidly developing technologies and increasing data volumes, organizations need a
+storage device that can fulfill and handle their needs. The below-mentioned advantages of SAN
+help inits deployment in an IT infrastructure.
+
+Advantages
+
+Capacity: SAN performance is directly proportional to the network type. A SAN allows
+unlimited sharing of data, regardless of the storage capacity. Its capacity can be
+extended limitlessly to thousands of terabytes.
+
+Easy sharing: SAN data is easily shared between systems as it maintains an isolated
+traffic. The traffic does not interfere with the normal user traffic, thereby increasing
+data transfer performance.
+
+Fast backup: A data mirror copy can be created instantly. These mirror images can be
+used as a backup whenever required.
+
+Reliability and Security: If a SAN is configured correctly, the data is secured. Chances of
+device intrusion is minimal. Reliable and secure centralized data storage.
+
+Productive: A SAN is scalable; adding a new disk to the network does not stop the SAN’s
+productivity. When adding a new hard disk, a reboot or shut down is not required.
+
+Availability of applications: The algorithms in a SAN storage array offer data protection.
+This results in the availability of applications at all times.
+
+Bootable: A SAN can run a server without a physical disk, and it can be booted by the
+SAN. This feature permits access to all page files and applications.
+
+Distance connectivity: For better security, storage devices can be kept at an isolated
+location. One of the features of a SAN is that it can connect with devices up to a
+distance of ten kilometers.
+
+Recovery: A SAN is the most reliable data recovery option. Even when the servers are
+offline a SAN remains available.
+
+Effective utilization: A SAN is an appropriate option for storage space than local disks. If
+a system requires more storage, a SAN dynamically allocates the required space. This
+process is similar to virtual machines.
+
+Integrity: Increased data integrity and a decreased load on the LAN.
+LAN-free and server-free data movement and backup
+
+Effective disaster tolerance
+
+The implementation of a SAN is beneficial to an organization, especially when considering
+budget constraints, availability, and employee expertise.
+
+Disadvantage
+
+Very costly: The implementation cost of a SAN can significantly exceed the available
+budget. A SAN is an investment and should only be implemented if it meets the goals of
+the organization.
+
+Network Attached Storage (NAS)
+
+NAS is a storage device connected to a network. It stores and retrieves data from a centralized
+location. NAS provides a dedicated shared storage space for a local area network. Implementing
+a NAS eradicates the server file sharing process on the network. The NAS contains one or more
+logically arranged storage devices. NAS offers file storage through a standard Ethernet
+connection.
+
+NAS devices do not use an external device management, and they are operated through a web-
+based utility. Since it resides on every node on the LAN, it has its own IP address. NAS is similar
+to a file server. NAS devices are scalable, vertically as well as horizontally. A NAS
+implementation is accomplished using large and clustered disks.
+
+NAS has evolved from supporting virtualization to data replication and multiprotocol access. A
+clustered NAS is one such example of the NAS evolution. In a clustered NAS infrastructure,
+access is provided to all files, irrespective of their physical location. It does not require a closed-
+source operating system such as Windows. Certain devices run on a stripped down OS such as
+FreeNAS, or any other open-source solutions.
+
+NAS devices are in high demand in small enterprises because of their effectiveness, low cost,
+and scalable storage capacity. They are classified into three types based on the number of
+drives, drive capacity, and scalability.
+
+Advantages
+
+• Accessibility: A NAS system stores data as files and is compatible with CIFS and NFS
+protocols. Multiple users can access the files simultaneously using an Ethernet network.
+Computers in a shared network can access the data either through a wireless or a wired
+connection.
+
+Storage: NAS deployment in a network increases the amount of storage available to the
+other systems. A NAS system can store up to 8 TB data. A NAS is most appropriate for
+storing large applications or video files.
+
+Efficient and Reliable: NAS assures an efficient transfer of data and reliable network
+access. If a system in a network fails, the functioning of other systems is not affected. A
+NAS server can also be created to give users the ability to access large files or
+applications.
+
+Automatic backup: Certain NAS devices are configured with an automatic backup
+feature. The data is available on the user system as well as on the server hard drive.
+Changes made on the user system are reflected on the server hard drive as well.
+Automatic backup is not time consuming and assures the security of data.
+
+Compatibility: Users with different operating systems can share files with no
+compatibility issues.
+
+A NAS can be connected to a LAN using the plug and play feature.
+Minimal administration required, unlike Unix or NT file servers.
+Centralized usage, and reduced cost of backup and maintenance than a SAN.
+
+Faster response than direct attached storage (DAS).
+
+Disadvantages
+
+Consumption: NAS shares the network with other host machines, and this tends to
+consume a larger amount of network bandwidth. For remote NAS systems, the data
+transfer performance will depend on the available bandwidth. It is advisable to avoid
+storing databases on a NAS, as the server response time fluctuates depending on the
+bandwidth. Applications that use most of the data transfer bandwidth will significantly
+reduce network performance.
+Network congestion: A large backup process can affect the function of an IP network
+and may lead to network congestion.
+Data transfer is inefficient as it uses TCP/IP instead of a specialized data transfer
+protocol.
+The storage service cannot be trusted for mission-critical operations.
+Administrators must set user quotas for storage space.
+
+Selecting an Appropriate Backup Method
+
+Organizations can choose any backup method depending on their budget and IT infrastructure.
+The different types of data backup methods are:
+
+• Hot Backup
+
+A hot backup is a popular backup method. It is also called as dynamic backup or active
+backup. In a hot backup, the system continues to perform the backup even when the
+user is accessing the system. Implementation of a hot backup in an organization avoids
+downtime. However, changes made to the data during the backup process is not
+reflected in the final backup file. In addition, while the backup is in process, the users
+may find the system to be slow. A hot backup is an expensive process. It is used when a
+service level down time is not allowed.
+
+Advantage:
+o Immediate data backup switch over is possible
+
+Disadvantage:
+o Very expensive
+
+• Cold Backup
+
+A cold backup is also called an offline backup. A cold backup can take place when the
+system is not working or is not accessible by users. A cold backup is the safest backup
+method as it avoids the risk of copying the data. A cold backup involves downtime as the
+users Cannot use the machine until the process is back online. A cold backup is not as
+expensive as a hot backup. It is used when a service level down time is allowed and a full
+backup is required.
+
+Advantage:
+o Least expensive
+
+Disadvantage:
+o Switching over the data backup requires additional time
+• Warm Backup
+
+A warm backup is also called a nearline backup. It will have a connectivity to the
+network. In a warm backup, the system updates are turned on to receive periodic
+updates. It is beneficial when mirroring or duplicating the data. The warm backup
+process can take a long time and can be conducted in intervals that can last from days to
+weeks. It isa combination of both hot and cold backups.
+
+Advantage:
+o Less expensive than a hot backup
+o Switching over the data backup takes less time than a cold backup but more time
+than a hot backup
+
+Disadvantage:
+o Itis less accessible than hot backup
+Choosing the Backup Location
+Onsite Data Backup
+
+This type of backup is performed within an organization. Onsite backup uses external devices
+such as a tape drive, DVD, hard disk, etc. The choice of external storage will depend on the
+amount of data to be backed up.
+
+• Advantages:
+o Provides immediate access to data.
+o Less expensive.
+o Media used for onsite backup is readily available and costs less.
+© Faster recovery.
+o Enhanced scalability.
+o Internet access is not required.
+
+• Disadvantages:
+o Requires direct human interaction to perform the backup.
+o Susceptible to theft or natural disasters.
+o Data loss risk is greater.
+Offsite Data Backup
+
+In an offsite backup, the backup is done at a remote location in fire-proof, indestructible safes.
+It either stores the data on physical drives, online, or a third-party backup service. Storing the
+data online helps in having an updated data backup available.
+
+• Advantages:
+
+o Implementing offsite backup creates multiple copies that can be stored in multiple
+locations.
+
+o Human error is minimal as the backup process is automated.
+o Data retention is unlimited.
+o Data is secured from physical security threats such as fire, floods, etc.
+• Disadvantages:
+o Problems with a regular data backup schedule.
+o Itis expensive, requiring a third-party service.
+o Requires an Internet connection, and the bandwidth consumption will be higher.
+o The process is lengthy and time consuming.
+Cloud Data Backup
+
+A Cloud backup is also known as online backup. It involves storing the backup on a public
+network or on a proprietary server. Usually, a third-party service provider hosts the proprietary
+server. The cloud data backup process works according to the requirements of the organization.
+If the organization needs a daily backup, the proprietary server will run a daily backup. Usually,
+any noncritical data is archived using a cloud data backup.
+
+• Advantages:
+
+o Cloud data backup is efficient as it uses technologies such as disk-based backup,
+virtualization, encryption, etc.
+
+o Many proprietors provide data monitoring and create reports for the organization.
+o The data in a cloud backup is easily accessed through the Internet.
+o The data is encrypted and free from physical security threats.
+
+• Disadvantages:
+o Data recovery can be time consuming.
+
+o Cloud data backup proprietors do not give any assurances or guarantees on the completion of a backup. The organization is responsible for checking whether the backup process was successful.
+
+Types of Backup
+
+An appropriate backup type is one that does not have a major impact on bandwidth, cost, time
+required, and the organization’s resources. The three most common backup types are full,
+differential, and incremental.
+
+• Full backup: This is also called a normal backup. A full backup occurs automatically
+according to a set schedule. It copies all files and compresses them to save space. A full
+backup provides efficient data protection for the copied data.
+
+• Differential backup: Differential backup is the combination of a full backup and an
+incremental backup. A differential backup backs up all the changes made since the last
+full backup.
+
+Example: Considering the above example, assume a full backup is scheduled for Sunday,
+and then a differential backup is scheduled to run until Saturday. Once the full backup is
+completed on Sunday, the differential backup will occur on Monday and the data that
+was changed will be backed up. On Tuesday, the backup will be for the changes made on
+Sunday and Monday. Then, on Wednesday, it will include the changes from Sunday,
+Monday, and Tuesday.
+
+• Incremental backup: Backups only files that have been changed or created after the last
+backup are copied to the backup media. The last backup can be of any type. Before an
+incremental backup is performed, the system should be backed up using a full or normal
+backup.
+
+Example: Assume a full backup of the system is scheduled for Sunday, and an
+incremental backup is scheduled from Tuesday to Saturday. Once the full backup is
+performed on Sunday, the incremental backup on Monday will only backup the changes
+that occurred on Sunday. This process will continue until Saturday.
+
+Backup Types: Advantages and Disadvantages
+
+Compare the advantages and disadvantages of each backup type, and then select one that is
+best suited for the organization.
+
+Full Backup
+• Advantages:
+o Itis easy to restore; the process requires a file name and location.
+o Maintains different versions of the data.
+
+• Disadvantages:
+o A time-consuming process because each file is backed up every time a full backup is
+performed.
+o Large storage requirements.
+Incremental Backup
+• Advantages:
+o Faster than a full backup.
+o Uses storage space efficiently, and there is no data duplication.
+o Least amount of storage space among other backup types.
+
+• Disadvantages:
+o Data restoration is time consuming and a complex process; first, a full backup is
+done, which is followed by an incremental backup.
+
+Differential Backup
+• Advantages:
+o Faster than a full backup.
+o Uses storage space more efficiently than a full backup; the backup only contains the
+changes made at regular intervals.
+o Data restoration is faster than an incremental backup.
+o Reduced amount of storage than a full backup.
+
+• Disadvantages:
+o Slower than an incremental backup.
+o Restoration process is slower than a full backup.
+
+Data Backup Tools
+File History Tool
+
+Use File History to backup and restore in Windows. By default, it backs up the system drive.
+Other drives can be selected for backup if needed. Regular data and settings back up is
+recommended to prevent data loss.
+
+Steps to Backup your PC with File History
+
+• Select Start > Settings > Update & Security > Backup > Add a drive +, and then
+select an external drive or network location for backups.
+
+File History before it is activated in Windows 10
+
+• Select an external drive. File History is now archiving data. An on/off slider appears
+under a new heading Automatically back up my files.
+• Click More options to change the File History defaults.
+• By default, Windows 10 File History will back up all folders in the User folder, back up
+files every hour as long as the backup drive is available and keep previous copies of the
+files forever. To change any of these settings, click More options under the on/off slider.
+
+Some additional data backup tools are as follows:
+
+Genie Backup Manager Pro (https://www.zoolz.com)
+BullGuard Backup (https://www.bullguard.com)
+NTI Backup Now EZ (https://www.nticorp.com)
+Power2Go 13 (https://www.cyberlink.com)
+Backup4all (https://www.backup4all.com)
+
+Data Backup Retention
+
+Data retention is the process of storing and maintaining important information for meeting
+compliance and business data archival requirements. It helps organizations in recovering
+business-critical data in case of data loss.
+
+Every organization should develop a data retention policy to ensure that all important data is
+satisfactorily stored. The data retention policy is a set of rules for preserving and maintaining
+data for operational or regulatory compliance requirements. The policy defines the required
+retention periods for different data types, and also sets the minimum standards for destroying
+certain information.
+
+A data retention policy is applied to all business units, processes, and systems in all countries
+where an organization operates. It is applied to an organization's officers, directors, employees,
+agents, affiliates, contractors, consultants, advisors, or service providers who can collect,
+process, or have access to different data types. Moreover, it is applied to all documents such as
+emails, hard copy documents, soft copy documents, audio, and video files, etc.
+
+Steps to Create Data a Retention Policy
+The following steps are used to create a data retention policy:
+1. Build a data retention policy development team
+
+You should build a data retention policy development team that includes the members
+such as:
+
+o In-house legal counsels
+o Departmental managers and supervisors
+o Those who receive and manage financial reports
+o Those who develop financial reports
+o Staff members for managing data retention settings
+
+2. Identify the types of regulatory compliances applicable to your business
+
+Different regulatory compliances specify different data retention durations and data
+removal conditions. Some of them are listed below:
+o The Health Insurance Portability and Accountability Act (HIPAA)
+o The Sarbanes-Oxley Act (SOX)
+o The Internal Revenue Service (IRS)
+o The Children’s Online Privacy Protection Act (COPPA)
+o The EU’s GDPR
+3. Specify the types of data to be included in your data retention policy
+
+The following types of data should be included in the data retention policy:
+o Documents
+o Emails and other electronic documents
+o Customer records
+o Transactional information
+o Spreadsheets
+o Contracts
+o Correspondence between staff and clients, agents, vendors, shareholders, and the public
+o Supplier and partner data
+o Employee records
+o Customer records
+o Sales, invoice, and billing information
+o Tax and accounting documentation
+o Financial reports
+o Healthcare and patient data
+o Student and educational data
+o Other information produced, collected, and maintained for satisfying regular 4. Develop a data retention policy
+
+Develop a data retention policy considering the following points:
+o Purpose
+o Applicable laws, regulations, policies, rules, and acts
+o Record retention and deletion schedule
+o Litigation plan
+o Review and update schedule
+
+5. Inform all employees about the data retention policy
+
+All employees should be aware of and comprehensively understand the different
+aspects of the data retention policy. Provide each employee a copy of the data retention
+policy and also design training and review sessions to keep them updated.
+
+Data Retention Policy Best Practices
+The following data retention best practices for an organization can help establish and enforce a
+more compliant and useful data retention policy suited to their needs:
+
+• Create a data retention policy that fulfills legal and business requirements
+• Justify the reasons behind the policy details
+• Start creating a policy with minimal requirements, and add new requirements as and
+when required
+• Create a simple policy which is easy for the employees to implement
+• Create different data retention policies for different data types, as per their legal and
+business impacts
+• Retain customer, subscriber, and user information only till they are necessary
+• Implement software to manage the data retention tasks
+• Classify data and decide if it should be archived or deleted
+• Files which are not accessed frequently should be moved to a lower-level archive
+• Organize and store archived data such that it is easily accessible
+
+Data Recovery Tools
+
+EaseUS Data Recovery Wizard
+Source: https://www.easeus.com
+
+EaseUS data recovery software can quickly retrieve lost files after deletion or emptying
+the recycle bin. It scans for all recoverable files from any inaccessible storage device and
+completes file recovery safely and efficiently. It is used not only for the recovery of
+deleted files and formatted drives, but also for overcoming other data-loss issues such
+as virus attacks, human errors, power failures, system crashes, OS re-
+installation/upgrade, hard-drive crashes, and software crashes.
+
+Some additional data recovery tools are as follows:
+• Recuva® (https://www.ccleaner.com)
+•  Puran File Recovery (http://www.puransoftware.com)
+• Glary Undelete (https://www.glarysoft.com)
+• SoftPerfect File Recovery (https://www.softperfect.com)
+• Wise Data Recovery (https://www.wisecleaner.com)
+Discuss Data Loss Prevention Concepts
+The objective of this section is to explain the importance of data loss prevention (DLP) in data
+security.
+
+What is Data Loss Prevention?
+
+Data loss prevention (DLP) includes a set of software products and processes that do not allow
+users to send confidential corporate data outside the organization. These software products
+help security professionals in controlling what data end users can transfer. DLP rules block the
+transfer of any confidential information across external networks. They control any
+unauthorized access to company information and prevent anyone from sending malicious
+programs to the organization.
+
+DLP software are implemented according to the organizational rules set by the management.
+This prevents accidental/malicious data leaks and losses. If an employee tries to forward or
+even upload company data on cloud storage or on a blog, the access will be denied by the
+system. A DLP policy is adopted by the management when internal threats to a company are
+detected. A DLP policy ensures that none of its employees send sensitive information outside
+the organization. New emerging DLP tools not only prevent the loss of data but also monitor
+and control irregular activities from occurring on the system.
+
+Different DLP products are available to help security professionals determine what data users
+can transfer. DLP products are also known as data leak prevention, information loss prevention,
+or extrusion prevention products.
+
+DLP is used by organizations to:
+
+• Discover sources of data leaks 
+• Prevent accidental disclosure of sensitive information to unintended parties
+• Monitor the sources of data leakage ;
+• Protect organization assets and resources
+• Manage resources with business rules, security policies, and software
+Types of Data Loss Prevention (DLP) Solutions
+
+There are various types of DLP solutions that function differently with the same objective, that
+is, to prevent data leakage.
+
+Endpoint DLP: Endpoint DLP is a solution that monitors and protects PC-based systems
+such as tablets, laptops, etc. It is used for preventing data leakage through clipboards,
+removable devices, and sharing applications. The solution includes an agent that
+monitors specific user operations such as sending an email, copying a file to removable
+media devices, printing a file, etc. Endpoint DLP protects data in use.
+
+Network DLP: Network DLP is a solution that monitors, protects, and reports all data in
+transit. It is installed at the “perimeter” of an organization’s network. It helps the
+security professional in scanning all data moving through the ports and protocols within
+the organization. It may analyze email traffic, social media interactions, SSL traffic,
+instant messaging, etc. The solution maintains reports containing information such what
+data is used, who is using the data, and where the data is sent. Thus, it helps in
+controlling the flow of data over the organization's network and meets regulatory
+compliance. Data collected by a Network DLP is stored in a database for retrieval later.
+
+Storage DLP: Storage DLP is a solution that monitors and protects data at rest, that is,
+the data stored in an organization’s data center infrastructure such as file servers,
+SharePoint, and databases. It identifies the location where sensitive information is
+stored and helps users in determining whether it is stored securely. It allows authorized
+users to view and share sensitive files in the organization’s network.
+
+DLP Solution: Windows Information Protection (WIP)
+
+Windows Information Protection (WIP) has an endpoint DLP capability that can be helpful for
+protecting local data at rest on endpoint devices. WIP can be configured to store business data
+only on approved devices/within approved applications.
+
+If the user creates a file on a Windows 10 device, the Windows Defender ATP evaluates its
+content for sensitive or customized information. In case of file matches, Windows Defender
+ATP applies DLP at its endpoints. For data discovery, Windows Defender ATP integrates with
+Azure Information Protection (AIP) and reports the detected sensitive data. Files with sensitive
+information and sensitivity labels are aggregated by AIP.
+
+Advantages of WIP:
+• As WIP separates corporate and personal data, there is no need for an employee to
+switch the applications or environments.
+• It reinforces the data protection for existing line-of-business applications.
+• WIP can remove the corporate data from Intune MDM enrolled devices.
+• For configuration, deployment, and management, WIP integrates with Microsoft Intune,
+System Center Configuration Manager, or the current mobile device management.
+
+DLP Solutions
+• MyDLP
+Source: https://mydlp.com
+
+MyDLP is a free and open-source solution that allows organizations to secure
+confidential data. The supported data inspection channels include web, email, instant
+messaging, printers, removable storage devices, screenshots, etc. MyDLP allows the
+user to monitor, inspect, and prevent all outgoing confidential data without any hassle.
+With its painless deployment and configuration, an easy-to-use policy interface, and
+great performance, IT administrators and security officers are able to effectively combat
+data leakage.
+
+Some additional DLP solutions are as follows:
+• Symantec Data Loss Prevention (https://www.symantec.com)
+• SecureTrust Data Loss Prevention (https://www.securetrust.com)
+• McAfee Total Protection (https://www.mcafee.com)
+• Check Point Data Loss Prevention (https://www.checkpoint.com)
+• Digital Guardian Endpoint DLP (https://digitalguardian.com)
+
+Best Practices for a Successful DLP Implementation
+
+DLP safeguards sensitive information in an organization. Implementation of DLP not only
+prevents the leakage of sensitive data, but also allows the security professional to monitor and
+control the data accessed and shared by an end user.
+
+Some best practices for a successful DLP implementation are as follows:
+• Identify the main objective of DLP.
+• Identify sensitive data for protection.
+• Evaluate the available DLP vendors.
+• Ensure that the selected DLP product is compatible and supports the required data
+types and data stores of the organization.
+• Identify the roles and responsibilities of individuals for the implementation of DLP
+solution.
+• Implement DLP with a minimal base to reduce false positives and enhance the base
+gradually by identifying sensitive data.
+• Enhance the DLP policies to support effective DLP operations and eliminate false
+positives.
+
+Module Summary
+This module has discussed data security and its importance
+It has discussed the different data security technologies
+It has also discussed various security controls for data encryption
+It has demonstrated various disk encryption, file encryption, and removable-media encryption tools
+This module has also discussed the methods and tools for data backup and retention
+Finally, this module ended with an overview of the data loss prevention (DLP) and DLP solutions
+In the next module, we will discuss on network traffic monitoring in detail
+Module Summary
+
+This module discussed data security and its importance. It discussed the different data security
+technologies as well as various security controls for data encryption. Furthermore, it
+demonstrated various disk encryption, file encryption, and removable-media encryption tools.
+This module also discussed methods and tools for data backup and retention. Finally, this
+module presented an overview of data loss prevention (DLP) and DLP solutions.
